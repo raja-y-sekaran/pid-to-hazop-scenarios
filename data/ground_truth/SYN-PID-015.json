@@ -1,0 +1,133 @@
+{
+ "equipment": [
+  {
+   "tag": "V-301",
+   "type": "V"
+  },
+  {
+   "tag": "K-302",
+   "type": "K"
+  },
+  {
+   "tag": "E-303",
+   "type": "E"
+  },
+  {
+   "tag": "V-304",
+   "type": "V"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "6\"-P-3001",
+   "from": "V-301",
+   "to": "K-302",
+   "valves": [
+    "LV-311"
+   ]
+  },
+  {
+   "line_no": "4\"-P-3002",
+   "from": "K-302",
+   "to": "E-303",
+   "valves": []
+  },
+  {
+   "line_no": "3\"-P-3003",
+   "from": "E-303",
+   "to": "V-304",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "LT-311",
+   "attached_to": "V-301",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-311",
+   "attached_to": "V-301",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-311",
+   "attached_to": "V-301",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-312",
+   "attached_to": "V-301",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-313",
+   "attached_to": "V-301",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PAH-313",
+   "attached_to": "V-301",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VT-315",
+   "attached_to": "K-302",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VAH-315",
+   "attached_to": "K-302",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-316",
+   "attached_to": "V-304",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-316",
+   "attached_to": "V-304",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAL-316",
+   "attached_to": "V-304",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-317",
+   "attached_to": "V-304",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-318",
+   "attached_to": "V-304",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PAH-318",
+   "attached_to": "V-304",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "TT-319",
+   "attached_to": "V-304",
+   "signal_line_drawn": true
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-314",
+   "equipment": "V-301"
+  },
+  {
+   "tag": "PSV-320",
+   "equipment": "V-304"
+  }
+ ],
+ "drawing": "SYN-PID-015",
+ "unit": 3,
+ "messy": false,
+ "hard": false
+}

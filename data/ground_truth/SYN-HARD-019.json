@@ -1,0 +1,134 @@
+{
+ "equipment": [
+  {
+   "tag": "T-601",
+   "type": "T"
+  },
+  {
+   "tag": "P-602A",
+   "type": "P"
+  },
+  {
+   "tag": "E-603",
+   "type": "E"
+  },
+  {
+   "tag": "V-604",
+   "type": "V"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "8\"-P-6001",
+   "from": "T-601",
+   "to": "P-602A",
+   "valves": [
+    "LV-611"
+   ]
+  },
+  {
+   "line_no": "4\"-P-6002",
+   "from": "P-602A",
+   "to": "E-603",
+   "valves": [
+    "NRV-612"
+   ]
+  },
+  {
+   "line_no": "4\"-P-6003",
+   "from": "E-603",
+   "to": "V-604",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "LT-611",
+   "attached_to": "T-601",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-611",
+   "attached_to": "T-601",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-611",
+   "attached_to": "T-601",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-611",
+   "attached_to": "T-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-613",
+   "attached_to": "T-601",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PAH-613",
+   "attached_to": "T-601",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "TT-614",
+   "attached_to": "T-601",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-616",
+   "attached_to": "V-604",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-616",
+   "attached_to": "V-604",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-616",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAL-616",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-617",
+   "attached_to": "V-604",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PT-618",
+   "attached_to": "V-604",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PAH-618",
+   "attached_to": "V-604",
+   "signal_line_drawn": false
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-615",
+   "equipment": "T-601"
+  },
+  {
+   "tag": "PSV-619",
+   "equipment": "V-604"
+  }
+ ],
+ "lines_without_arrow": [
+  "8\"-P-6001",
+  "4\"-P-6002"
+ ],
+ "drawing": "SYN-HARD-019",
+ "unit": 6,
+ "messy": false,
+ "hard": true
+}

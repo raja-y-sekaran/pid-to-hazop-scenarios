@@ -1,0 +1,135 @@
+{
+ "equipment": [
+  {
+   "tag": "T-601",
+   "type": "T"
+  },
+  {
+   "tag": "P-602A",
+   "type": "P"
+  },
+  {
+   "tag": "C-603",
+   "type": "C"
+  },
+  {
+   "tag": "P-604A",
+   "type": "P"
+  },
+  {
+   "tag": "E-605",
+   "type": "E"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "6\"-P-6001",
+   "from": "T-601",
+   "to": "P-602A",
+   "valves": [
+    "LV-611"
+   ]
+  },
+  {
+   "line_no": "8\"-P-6002",
+   "from": "P-602A",
+   "to": "C-603",
+   "valves": [
+    "NRV-612"
+   ]
+  },
+  {
+   "line_no": "6\"-P-6003",
+   "from": "C-603",
+   "to": "P-604A",
+   "valves": [
+    "LV-613"
+   ]
+  },
+  {
+   "line_no": "8\"-P-6004",
+   "from": "P-604A",
+   "to": "E-605",
+   "valves": [
+    "NRV-614",
+    "FV-615"
+   ]
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "FIC-615",
+   "attached_to": "8\"-P-6004",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "FT-615",
+   "attached_to": "8\"-P-6004",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-611",
+   "attached_to": "T-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-611",
+   "attached_to": "T-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-611",
+   "attached_to": "T-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-616",
+   "attached_to": "T-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "TT-617",
+   "attached_to": "T-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-613",
+   "attached_to": "C-603",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-613",
+   "attached_to": "C-603",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-613",
+   "attached_to": "C-603",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-619",
+   "attached_to": "C-603",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PAH-619",
+   "attached_to": "C-603",
+   "signal_line_drawn": false
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-618",
+   "equipment": "T-601"
+  },
+  {
+   "tag": "PSV-620",
+   "equipment": "C-603"
+  }
+ ],
+ "drawing": "SYN-PID-026",
+ "unit": 6,
+ "messy": true,
+ "hard": false
+}

@@ -1,0 +1,191 @@
+{
+ "equipment": [
+  {
+   "tag": "T-701",
+   "type": "T"
+  },
+  {
+   "tag": "P-702A",
+   "type": "P"
+  },
+  {
+   "tag": "C-703",
+   "type": "C"
+  },
+  {
+   "tag": "P-704A",
+   "type": "P"
+  },
+  {
+   "tag": "E-705",
+   "type": "E"
+  },
+  {
+   "tag": "T-706",
+   "type": "T"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "6\"-P-7001",
+   "from": "T-701",
+   "to": "P-702A",
+   "valves": [
+    "LV-711"
+   ]
+  },
+  {
+   "line_no": "3\"-P-7002",
+   "from": "P-702A",
+   "to": "C-703",
+   "valves": [
+    "NRV-712",
+    "FV-713"
+   ]
+  },
+  {
+   "line_no": "3\"-P-7003",
+   "from": "C-703",
+   "to": "P-704A",
+   "valves": [
+    "LV-714"
+   ]
+  },
+  {
+   "line_no": "6\"-P-7004",
+   "from": "P-704A",
+   "to": "E-705",
+   "valves": []
+  },
+  {
+   "line_no": "6\"-P-7005",
+   "from": "E-705",
+   "to": "T-706",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "FIC-713",
+   "attached_to": "3\"-P-7002",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "FT-713",
+   "attached_to": "3\"-P-7002",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "FAL-713",
+   "attached_to": "3\"-P-7002",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-711",
+   "attached_to": "T-701",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-711",
+   "attached_to": "T-701",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-711",
+   "attached_to": "T-701",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-711",
+   "attached_to": "T-701",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-714",
+   "attached_to": "C-703",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-714",
+   "attached_to": "C-703",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-714",
+   "attached_to": "C-703",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAL-714",
+   "attached_to": "C-703",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PT-716",
+   "attached_to": "C-703",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-718",
+   "attached_to": "T-706",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-718",
+   "attached_to": "T-706",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-718",
+   "attached_to": "T-706",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-718",
+   "attached_to": "T-706",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-719",
+   "attached_to": "T-706",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PT-720",
+   "attached_to": "T-706",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PAH-720",
+   "attached_to": "T-706",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "TT-721",
+   "attached_to": "T-706",
+   "signal_line_drawn": true
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-715",
+   "equipment": "T-701"
+  },
+  {
+   "tag": "PSV-717",
+   "equipment": "C-703"
+  },
+  {
+   "tag": "PSV-722",
+   "equipment": "T-706"
+  }
+ ],
+ "lines_without_arrow": [
+  "6\"-P-7004",
+  "6\"-P-7005"
+ ],
+ "drawing": "SYN-HARD-008",
+ "unit": 7,
+ "messy": true,
+ "hard": true
+}

@@ -1,0 +1,177 @@
+{
+ "equipment": [
+  {
+   "tag": "T-501",
+   "type": "T"
+  },
+  {
+   "tag": "P-502A",
+   "type": "P"
+  },
+  {
+   "tag": "V-503",
+   "type": "V"
+  },
+  {
+   "tag": "K-504",
+   "type": "K"
+  },
+  {
+   "tag": "V-505",
+   "type": "V"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "2\"-P-5001",
+   "from": "T-501",
+   "to": "P-502A",
+   "valves": [
+    "LV-511"
+   ]
+  },
+  {
+   "line_no": "2\"-P-5002",
+   "from": "P-502A",
+   "to": "V-503",
+   "valves": [
+    "NRV-512",
+    "FV-513"
+   ]
+  },
+  {
+   "line_no": "2\"-P-5003",
+   "from": "V-503",
+   "to": "K-504",
+   "valves": [
+    "LV-514"
+   ]
+  },
+  {
+   "line_no": "6\"-P-5004",
+   "from": "K-504",
+   "to": "V-505",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "FIC-513",
+   "attached_to": "2\"-P-5002",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "FT-513",
+   "attached_to": "2\"-P-5002",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-511",
+   "attached_to": "T-501",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-511",
+   "attached_to": "T-501",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-511",
+   "attached_to": "T-501",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-511",
+   "attached_to": "T-501",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PT-515",
+   "attached_to": "T-501",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PAH-515",
+   "attached_to": "T-501",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "TT-516",
+   "attached_to": "T-501",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-514",
+   "attached_to": "V-503",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-514",
+   "attached_to": "V-503",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-514",
+   "attached_to": "V-503",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VT-519",
+   "attached_to": "K-504",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VAH-519",
+   "attached_to": "K-504",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-520",
+   "attached_to": "V-505",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-520",
+   "attached_to": "V-505",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-520",
+   "attached_to": "V-505",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-520",
+   "attached_to": "V-505",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LSHH-521",
+   "attached_to": "V-505",
+   "signal_line_drawn": false
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-517",
+   "equipment": "T-501"
+  },
+  {
+   "tag": "PSV-518",
+   "equipment": "V-503"
+  },
+  {
+   "tag": "PSV-522",
+   "equipment": "V-505"
+  }
+ ],
+ "lines_without_arrow": [
+  "2\"-P-5001",
+  "2\"-P-5002",
+  "2\"-P-5003"
+ ],
+ "drawing": "SYN-HARD-005",
+ "unit": 5,
+ "messy": true,
+ "hard": true
+}

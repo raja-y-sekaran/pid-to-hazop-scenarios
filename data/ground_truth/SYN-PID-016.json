@@ -1,0 +1,110 @@
+{
+ "equipment": [
+  {
+   "tag": "V-801",
+   "type": "V"
+  },
+  {
+   "tag": "P-802A",
+   "type": "P"
+  },
+  {
+   "tag": "E-803",
+   "type": "E"
+  },
+  {
+   "tag": "V-804",
+   "type": "V"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "3\"-P-8001",
+   "from": "V-801",
+   "to": "P-802A",
+   "valves": [
+    "LV-811"
+   ]
+  },
+  {
+   "line_no": "8\"-P-8002",
+   "from": "P-802A",
+   "to": "E-803",
+   "valves": [
+    "NRV-812"
+   ]
+  },
+  {
+   "line_no": "8\"-P-8003",
+   "from": "E-803",
+   "to": "V-804",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "TT-813",
+   "attached_to": "8\"-P-8003",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-811",
+   "attached_to": "V-801",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-811",
+   "attached_to": "V-801",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LSHH-814",
+   "attached_to": "V-801",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-816",
+   "attached_to": "V-804",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-816",
+   "attached_to": "V-804",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-816",
+   "attached_to": "V-804",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-816",
+   "attached_to": "V-804",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-817",
+   "attached_to": "V-804",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PAH-817",
+   "attached_to": "V-804",
+   "signal_line_drawn": false
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-815",
+   "equipment": "V-801"
+  },
+  {
+   "tag": "PSV-818",
+   "equipment": "V-804"
+  }
+ ],
+ "drawing": "SYN-PID-016",
+ "unit": 8,
+ "messy": true,
+ "hard": false
+}

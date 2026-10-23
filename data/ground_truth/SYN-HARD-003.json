@@ -1,0 +1,137 @@
+{
+ "equipment": [
+  {
+   "tag": "T-101",
+   "type": "T"
+  },
+  {
+   "tag": "P-102A",
+   "type": "P"
+  },
+  {
+   "tag": "V-103",
+   "type": "V"
+  },
+  {
+   "tag": "K-104",
+   "type": "K"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "3\"-P-1001",
+   "from": "T-101",
+   "to": "P-102A",
+   "valves": [
+    "LV-111"
+   ]
+  },
+  {
+   "line_no": "2\"-P-1002",
+   "from": "P-102A",
+   "to": "V-103",
+   "valves": [
+    "NRV-112",
+    "FV-113"
+   ]
+  },
+  {
+   "line_no": "6\"-P-1003",
+   "from": "V-103",
+   "to": "K-104",
+   "valves": [
+    "LV-114"
+   ]
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "FIC-113",
+   "attached_to": "2\"-P-1002",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "FT-113",
+   "attached_to": "2\"-P-1002",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "FAL-113",
+   "attached_to": "2\"-P-1002",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-111",
+   "attached_to": "T-101",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-111",
+   "attached_to": "T-101",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-111",
+   "attached_to": "T-101",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LSHH-115",
+   "attached_to": "T-101",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-114",
+   "attached_to": "V-103",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-114",
+   "attached_to": "V-103",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-114",
+   "attached_to": "V-103",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-114",
+   "attached_to": "V-103",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-116",
+   "attached_to": "V-103",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PAH-116",
+   "attached_to": "V-103",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VT-118",
+   "attached_to": "K-104",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "VAH-118",
+   "attached_to": "K-104",
+   "signal_line_drawn": false
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-117",
+   "equipment": "V-103"
+  }
+ ],
+ "lines_without_arrow": [
+  "2\"-P-1002"
+ ],
+ "drawing": "SYN-HARD-003",
+ "unit": 1,
+ "messy": false,
+ "hard": true
+}

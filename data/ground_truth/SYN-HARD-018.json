@@ -1,0 +1,132 @@
+{
+ "equipment": [
+  {
+   "tag": "V-801",
+   "type": "V"
+  },
+  {
+   "tag": "K-802",
+   "type": "K"
+  },
+  {
+   "tag": "E-803",
+   "type": "E"
+  },
+  {
+   "tag": "V-804",
+   "type": "V"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "2\"-P-8001",
+   "from": "V-801",
+   "to": "K-802",
+   "valves": [
+    "LV-811"
+   ]
+  },
+  {
+   "line_no": "4\"-P-8002",
+   "from": "K-802",
+   "to": "E-803",
+   "valves": []
+  },
+  {
+   "line_no": "8\"-P-8003",
+   "from": "E-803",
+   "to": "V-804",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "LT-811",
+   "attached_to": "V-801",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-811",
+   "attached_to": "V-801",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-811",
+   "attached_to": "V-801",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LSHH-812",
+   "attached_to": "V-801",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PT-813",
+   "attached_to": "V-801",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PAH-813",
+   "attached_to": "V-801",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VT-814",
+   "attached_to": "K-802",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "VAH-814",
+   "attached_to": "K-802",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-815",
+   "attached_to": "V-804",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-815",
+   "attached_to": "V-804",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-815",
+   "attached_to": "V-804",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-815",
+   "attached_to": "V-804",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-816",
+   "attached_to": "V-804",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PT-817",
+   "attached_to": "V-804",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PAH-817",
+   "attached_to": "V-804",
+   "signal_line_drawn": false
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-818",
+   "equipment": "V-804"
+  }
+ ],
+ "lines_without_arrow": [
+  "2\"-P-8001"
+ ],
+ "drawing": "SYN-HARD-018",
+ "unit": 8,
+ "messy": false,
+ "hard": true
+}

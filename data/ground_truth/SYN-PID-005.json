@@ -1,0 +1,126 @@
+{
+ "equipment": [
+  {
+   "tag": "T-401",
+   "type": "T"
+  },
+  {
+   "tag": "P-402A",
+   "type": "P"
+  },
+  {
+   "tag": "E-403",
+   "type": "E"
+  },
+  {
+   "tag": "V-404",
+   "type": "V"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "8\"-P-4001",
+   "from": "T-401",
+   "to": "P-402A",
+   "valves": [
+    "LV-411"
+   ]
+  },
+  {
+   "line_no": "2\"-P-4002",
+   "from": "P-402A",
+   "to": "E-403",
+   "valves": [
+    "NRV-412",
+    "FV-413"
+   ]
+  },
+  {
+   "line_no": "8\"-P-4003",
+   "from": "E-403",
+   "to": "V-404",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "FIC-413",
+   "attached_to": "2\"-P-4002",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "FT-413",
+   "attached_to": "2\"-P-4002",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "FAL-413",
+   "attached_to": "2\"-P-4002",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-411",
+   "attached_to": "T-401",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-411",
+   "attached_to": "T-401",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-411",
+   "attached_to": "T-401",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAL-411",
+   "attached_to": "T-401",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-414",
+   "attached_to": "T-401",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-416",
+   "attached_to": "V-404",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-416",
+   "attached_to": "V-404",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-416",
+   "attached_to": "V-404",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-417",
+   "attached_to": "V-404",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-418",
+   "attached_to": "V-404",
+   "signal_line_drawn": true
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-415",
+   "equipment": "T-401"
+  },
+  {
+   "tag": "PSV-419",
+   "equipment": "V-404"
+  }
+ ],
+ "drawing": "SYN-PID-005",
+ "unit": 4,
+ "messy": false,
+ "hard": false
+}

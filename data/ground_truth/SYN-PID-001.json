@@ -1,0 +1,128 @@
+{
+ "equipment": [
+  {
+   "tag": "V-101",
+   "type": "V"
+  },
+  {
+   "tag": "K-102",
+   "type": "K"
+  },
+  {
+   "tag": "E-103",
+   "type": "E"
+  },
+  {
+   "tag": "V-104",
+   "type": "V"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "3\"-P-1001",
+   "from": "V-101",
+   "to": "K-102",
+   "valves": [
+    "LV-111"
+   ]
+  },
+  {
+   "line_no": "3\"-P-1002",
+   "from": "K-102",
+   "to": "E-103",
+   "valves": []
+  },
+  {
+   "line_no": "3\"-P-1003",
+   "from": "E-103",
+   "to": "V-104",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "LT-111",
+   "attached_to": "V-101",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-111",
+   "attached_to": "V-101",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-111",
+   "attached_to": "V-101",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-112",
+   "attached_to": "V-101",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-113",
+   "attached_to": "V-101",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PAH-113",
+   "attached_to": "V-101",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "TT-114",
+   "attached_to": "V-101",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VT-116",
+   "attached_to": "K-102",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VAH-116",
+   "attached_to": "K-102",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-117",
+   "attached_to": "V-104",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-117",
+   "attached_to": "V-104",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-117",
+   "attached_to": "V-104",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-118",
+   "attached_to": "V-104",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PAH-118",
+   "attached_to": "V-104",
+   "signal_line_drawn": true
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-115",
+   "equipment": "V-101"
+  },
+  {
+   "tag": "PSV-119",
+   "equipment": "V-104"
+  }
+ ],
+ "drawing": "SYN-PID-001",
+ "unit": 1,
+ "messy": false,
+ "hard": false
+}

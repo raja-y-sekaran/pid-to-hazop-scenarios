@@ -1,0 +1,127 @@
+{
+ "equipment": [
+  {
+   "tag": "V-901",
+   "type": "V"
+  },
+  {
+   "tag": "K-902",
+   "type": "K"
+  },
+  {
+   "tag": "E-903",
+   "type": "E"
+  },
+  {
+   "tag": "V-904",
+   "type": "V"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "8\"-P-9001",
+   "from": "V-901",
+   "to": "K-902",
+   "valves": [
+    "LV-911"
+   ]
+  },
+  {
+   "line_no": "3\"-P-9002",
+   "from": "K-902",
+   "to": "E-903",
+   "valves": []
+  },
+  {
+   "line_no": "3\"-P-9003",
+   "from": "E-903",
+   "to": "V-904",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "TT-912",
+   "attached_to": "3\"-P-9003",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-911",
+   "attached_to": "V-901",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-911",
+   "attached_to": "V-901",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-911",
+   "attached_to": "V-901",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "VT-914",
+   "attached_to": "K-902",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VAH-914",
+   "attached_to": "K-902",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-915",
+   "attached_to": "V-904",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-915",
+   "attached_to": "V-904",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-915",
+   "attached_to": "V-904",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAL-915",
+   "attached_to": "V-904",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-916",
+   "attached_to": "V-904",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-917",
+   "attached_to": "V-904",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PAH-917",
+   "attached_to": "V-904",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "TT-918",
+   "attached_to": "V-904",
+   "signal_line_drawn": false
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-913",
+   "equipment": "V-901"
+  }
+ ],
+ "lines_without_arrow": [
+  "3\"-P-9003"
+ ],
+ "drawing": "SYN-HARD-006",
+ "unit": 9,
+ "messy": true,
+ "hard": true
+}

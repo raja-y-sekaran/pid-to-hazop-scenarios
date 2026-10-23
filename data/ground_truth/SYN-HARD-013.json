@@ -1,0 +1,167 @@
+{
+ "equipment": [
+  {
+   "tag": "V-401",
+   "type": "V"
+  },
+  {
+   "tag": "P-402A",
+   "type": "P"
+  },
+  {
+   "tag": "E-403",
+   "type": "E"
+  },
+  {
+   "tag": "V-404",
+   "type": "V"
+  },
+  {
+   "tag": "P-405A",
+   "type": "P"
+  },
+  {
+   "tag": "T-406",
+   "type": "T"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "8\"-P-4001",
+   "from": "V-401",
+   "to": "P-402A",
+   "valves": [
+    "LV-411"
+   ]
+  },
+  {
+   "line_no": "2\"-P-4002",
+   "from": "P-402A",
+   "to": "E-403",
+   "valves": [
+    "NRV-412"
+   ]
+  },
+  {
+   "line_no": "6\"-P-4003",
+   "from": "E-403",
+   "to": "V-404",
+   "valves": []
+  },
+  {
+   "line_no": "4\"-P-4004",
+   "from": "V-404",
+   "to": "P-405A",
+   "valves": [
+    "LV-414"
+   ]
+  },
+  {
+   "line_no": "8\"-P-4005",
+   "from": "P-405A",
+   "to": "T-406",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "TT-413",
+   "attached_to": "6\"-P-4003",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "TAH-413",
+   "attached_to": "6\"-P-4003",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-411",
+   "attached_to": "V-401",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-411",
+   "attached_to": "V-401",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-411",
+   "attached_to": "V-401",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LSHH-415",
+   "attached_to": "V-401",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-416",
+   "attached_to": "V-401",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "PAH-416",
+   "attached_to": "V-401",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-414",
+   "attached_to": "V-404",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-414",
+   "attached_to": "V-404",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-414",
+   "attached_to": "V-404",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LSHH-417",
+   "attached_to": "V-404",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "TT-418",
+   "attached_to": "V-404",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LT-420",
+   "attached_to": "T-406",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LIC-420",
+   "attached_to": "T-406",
+   "signal_line_drawn": false
+  },
+  {
+   "tag": "LAH-420",
+   "attached_to": "T-406",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-421",
+   "attached_to": "T-406",
+   "signal_line_drawn": false
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-419",
+   "equipment": "V-404"
+  },
+  {
+   "tag": "PSV-422",
+   "equipment": "T-406"
+  }
+ ],
+ "drawing": "SYN-HARD-013",
+ "unit": 4,
+ "messy": false,
+ "hard": true
+}

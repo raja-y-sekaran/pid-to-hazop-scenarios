@@ -1,0 +1,173 @@
+{
+ "equipment": [
+  {
+   "tag": "V-601",
+   "type": "V"
+  },
+  {
+   "tag": "P-602A",
+   "type": "P"
+  },
+  {
+   "tag": "E-603",
+   "type": "E"
+  },
+  {
+   "tag": "V-604",
+   "type": "V"
+  },
+  {
+   "tag": "P-605A",
+   "type": "P"
+  },
+  {
+   "tag": "T-606",
+   "type": "T"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "8\"-P-6001",
+   "from": "V-601",
+   "to": "P-602A",
+   "valves": [
+    "LV-611"
+   ]
+  },
+  {
+   "line_no": "4\"-P-6002",
+   "from": "P-602A",
+   "to": "E-603",
+   "valves": [
+    "NRV-612"
+   ]
+  },
+  {
+   "line_no": "4\"-P-6003",
+   "from": "E-603",
+   "to": "V-604",
+   "valves": []
+  },
+  {
+   "line_no": "4\"-P-6004",
+   "from": "V-604",
+   "to": "P-605A",
+   "valves": [
+    "LV-614"
+   ]
+  },
+  {
+   "line_no": "4\"-P-6005",
+   "from": "P-605A",
+   "to": "T-606",
+   "valves": [
+    "NRV-615"
+   ]
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "TT-613",
+   "attached_to": "4\"-P-6003",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "TAH-613",
+   "attached_to": "4\"-P-6003",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-611",
+   "attached_to": "V-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-611",
+   "attached_to": "V-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-611",
+   "attached_to": "V-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "TT-616",
+   "attached_to": "V-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-614",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-614",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-614",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-618",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-620",
+   "attached_to": "T-606",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-620",
+   "attached_to": "T-606",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-620",
+   "attached_to": "T-606",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAL-620",
+   "attached_to": "T-606",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-621",
+   "attached_to": "T-606",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PAH-621",
+   "attached_to": "T-606",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "TT-622",
+   "attached_to": "T-606",
+   "signal_line_drawn": true
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-617",
+   "equipment": "V-601"
+  },
+  {
+   "tag": "PSV-619",
+   "equipment": "V-604"
+  },
+  {
+   "tag": "PSV-623",
+   "equipment": "T-606"
+  }
+ ],
+ "drawing": "SYN-PID-020",
+ "unit": 6,
+ "messy": false,
+ "hard": false
+}

@@ -1,0 +1,128 @@
+{
+ "equipment": [
+  {
+   "tag": "V-601",
+   "type": "V"
+  },
+  {
+   "tag": "K-602",
+   "type": "K"
+  },
+  {
+   "tag": "E-603",
+   "type": "E"
+  },
+  {
+   "tag": "V-604",
+   "type": "V"
+  }
+ ],
+ "lines": [
+  {
+   "line_no": "4\"-P-6001",
+   "from": "V-601",
+   "to": "K-602",
+   "valves": [
+    "LV-611"
+   ]
+  },
+  {
+   "line_no": "8\"-P-6002",
+   "from": "K-602",
+   "to": "E-603",
+   "valves": []
+  },
+  {
+   "line_no": "4\"-P-6003",
+   "from": "E-603",
+   "to": "V-604",
+   "valves": []
+  }
+ ],
+ "instruments": [
+  {
+   "tag": "TT-612",
+   "attached_to": "4\"-P-6003",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "TAH-612",
+   "attached_to": "4\"-P-6003",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-611",
+   "attached_to": "V-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-611",
+   "attached_to": "V-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-611",
+   "attached_to": "V-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LSHH-613",
+   "attached_to": "V-601",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VT-615",
+   "attached_to": "K-602",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "VAH-615",
+   "attached_to": "K-602",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LT-616",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LIC-616",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAH-616",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "LAL-616",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PT-617",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  },
+  {
+   "tag": "PAH-617",
+   "attached_to": "V-604",
+   "signal_line_drawn": true
+  }
+ ],
+ "relief_valves": [
+  {
+   "tag": "PSV-614",
+   "equipment": "V-601"
+  },
+  {
+   "tag": "PSV-618",
+   "equipment": "V-604"
+  }
+ ],
+ "drawing": "SYN-PID-013",
+ "unit": 6,
+ "messy": false,
+ "hard": false
+}
