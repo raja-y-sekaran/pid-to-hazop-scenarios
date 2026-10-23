@@ -1,0 +1,2193 @@
+[
+ {
+  "drawing": "SYN-HARD-001",
+  "equipment": {
+   "V-601": "drum",
+   "K-602": "compressor",
+   "E-603": "heat exchanger",
+   "V-604": "drum"
+  },
+  "lines": {
+   "2\"-P-6001": {
+    "start": "V-601",
+    "end": "K-602",
+    "valves": [
+     "LV-611"
+    ]
+   },
+   "3\"-P-6002": {
+    "start": "K-602",
+    "end": "E-603",
+    "valves": []
+   },
+   "8\"-P-6003": {
+    "start": "E-603",
+    "end": "V-604",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-612": {
+    "attached_to": "8\"-P-6003",
+    "method": "signal line"
+   },
+   "LT-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LIC-611": {
+    "attached_to": "V-601",
+    "method": "same loop"
+   },
+   "LAL-611": {
+    "attached_to": "V-601",
+    "method": "same loop"
+   },
+   "VT-613": {
+    "attached_to": "K-602",
+    "method": "proximity"
+   },
+   "VAH-613": {
+    "attached_to": "K-602",
+    "method": "proximity"
+   },
+   "LT-614": {
+    "attached_to": "V-604",
+    "method": "proximity"
+   },
+   "LIC-614": {
+    "attached_to": "V-604",
+    "method": "proximity"
+   },
+   "LAH-614": {
+    "attached_to": "V-604",
+    "method": "proximity"
+   },
+   "LAL-614": {
+    "attached_to": "V-604",
+    "method": "proximity"
+   },
+   "LSHH-615": {
+    "attached_to": "V-604",
+    "method": "proximity"
+   },
+   "TT-616": {
+    "attached_to": "V-604",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-617": "V-604"
+  },
+  "review_flags": [
+   "line 3\"-P-6002: no arrowhead, flow direction assumed left to right",
+   "instrument VT-613: no signal line, attached to nearest item K-602 (36 pt)",
+   "instrument VAH-613: no signal line, attached to nearest item K-602 (36 pt)",
+   "instrument LT-614: no signal line, attached to nearest item V-604 (37 pt)",
+   "instrument LIC-614: no signal line, attached to nearest item V-604 (36 pt)",
+   "instrument LAH-614: no signal line, attached to nearest item V-604 (36 pt)",
+   "instrument LAL-614: no signal line, attached to nearest item V-604 (65 pt)",
+   "instrument LSHH-615: no signal line, attached to nearest item V-604 (65 pt)",
+   "instrument TT-616: no signal line, attached to nearest item V-604 (66 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-002",
+  "equipment": {
+   "V-201": "drum",
+   "P-202A": "pump",
+   "E-203": "heat exchanger",
+   "C-204": "column"
+  },
+  "lines": {
+   "2\"-P-2001": {
+    "start": "V-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "8\"-P-2002": {
+    "start": "P-202A",
+    "end": "E-203",
+    "valves": [
+     "NRV-212"
+    ]
+   },
+   "6\"-P-2003": {
+    "start": "E-203",
+    "end": "C-204",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LAH-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "TT-213": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "TT-217": {
+    "attached_to": "C-204",
+    "method": "signal line"
+   },
+   "LT-211": {
+    "attached_to": "V-201",
+    "method": "same loop"
+   },
+   "LIC-211": {
+    "attached_to": "V-201",
+    "method": "same loop"
+   },
+   "LT-215": {
+    "attached_to": "C-204",
+    "method": "proximity"
+   },
+   "LAL-215": {
+    "attached_to": "C-204",
+    "method": "proximity"
+   },
+   "PT-216": {
+    "attached_to": "C-204",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-218": "C-204",
+   "PSV-214": "V-201"
+  },
+  "review_flags": [
+   "line 8\"-P-2002: no arrowhead, flow direction assumed left to right",
+   "instrument LT-215: no signal line, attached to nearest item C-204 (41 pt)",
+   "instrument LAL-215: no signal line, attached to nearest item C-204 (65 pt)",
+   "instrument PT-216: no signal line, attached to nearest item C-204 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-003",
+  "equipment": {
+   "T-101": "tank",
+   "P-102A": "pump",
+   "V-103": "drum",
+   "K-104": "compressor"
+  },
+  "lines": {
+   "3\"-P-1001": {
+    "start": "T-101",
+    "end": "P-102A",
+    "valves": [
+     "LV-111"
+    ]
+   },
+   "2\"-P-1002": {
+    "start": "P-102A",
+    "end": "V-103",
+    "valves": [
+     "FV-113",
+     "NRV-112"
+    ]
+   },
+   "6\"-P-1003": {
+    "start": "V-103",
+    "end": "K-104",
+    "valves": [
+     "LV-114"
+    ]
+   }
+  },
+  "instruments": {
+   "LAL-114": {
+    "attached_to": "V-103",
+    "method": "signal line"
+   },
+   "PAH-116": {
+    "attached_to": "V-103",
+    "method": "signal line"
+   },
+   "FIC-113": {
+    "attached_to": "2\"-P-1002",
+    "method": "proximity"
+   },
+   "FT-113": {
+    "attached_to": "2\"-P-1002",
+    "method": "proximity"
+   },
+   "FAL-113": {
+    "attached_to": "V-103",
+    "method": "proximity"
+   },
+   "LT-111": {
+    "attached_to": "T-101",
+    "method": "proximity"
+   },
+   "LSHH-115": {
+    "attached_to": "T-101",
+    "method": "proximity"
+   },
+   "LT-114": {
+    "attached_to": "V-103",
+    "method": "same loop"
+   },
+   "PT-116": {
+    "attached_to": "V-103",
+    "method": "same loop"
+   },
+   "VT-118": {
+    "attached_to": "K-104",
+    "method": "proximity"
+   },
+   "VAH-118": {
+    "attached_to": "K-104",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-117": "V-103"
+  },
+  "review_flags": [
+   "line 2\"-P-1002: no arrowhead, flow direction assumed left to right",
+   "overlapping bubbles near (311, 333): text 111 111 could not be paired - check by eye",
+   "overlapping bubbles near (323, 333): text 111 111 could not be paired - check by eye",
+   "instrument FIC-113: no signal line, attached to nearest item 2\"-P-1002 (39 pt)",
+   "instrument FT-113: no signal line, attached to nearest item 2\"-P-1002 (21 pt)",
+   "instrument FAL-113: no signal line, attached to nearest item V-103 (13 pt)",
+   "instrument LT-111: no signal line, attached to nearest item T-101 (36 pt)",
+   "instrument LSHH-115: no signal line, attached to nearest item T-101 (65 pt)",
+   "instrument VT-118: no signal line, attached to nearest item K-104 (36 pt)",
+   "instrument VAH-118: no signal line, attached to nearest item K-104 (36 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-004",
+  "equipment": {
+   "V-701": "drum",
+   "K-702": "compressor",
+   "E-703": "heat exchanger",
+   "V-704": "drum"
+  },
+  "lines": {
+   "4\"-P-7001": {
+    "start": "V-701",
+    "end": "K-702",
+    "valves": [
+     "LV-711"
+    ]
+   },
+   "3\"-P-7002": {
+    "start": "K-702",
+    "end": "E-703",
+    "valves": []
+   },
+   "2\"-P-7003": {
+    "start": "E-703",
+    "end": "V-704",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-712": {
+    "attached_to": "2\"-P-7003",
+    "method": "signal line"
+   },
+   "LT-711": {
+    "attached_to": "V-701",
+    "method": "signal line"
+   },
+   "LIC-711": {
+    "attached_to": "V-701",
+    "method": "signal line"
+   },
+   "VT-715": {
+    "attached_to": "K-702",
+    "method": "signal line"
+   },
+   "LAH-716": {
+    "attached_to": "V-704",
+    "method": "signal line"
+   },
+   "LAH-711": {
+    "attached_to": "V-701",
+    "method": "same loop"
+   },
+   "PT-713": {
+    "attached_to": "V-701",
+    "method": "proximity"
+   },
+   "PAH-713": {
+    "attached_to": "V-701",
+    "method": "proximity"
+   },
+   "VAH-715": {
+    "attached_to": "K-702",
+    "method": "same loop"
+   },
+   "LT-716": {
+    "attached_to": "V-704",
+    "method": "same loop"
+   },
+   "LIC-716": {
+    "attached_to": "V-704",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-714": "V-701",
+   "PSV-717": "V-704"
+  },
+  "review_flags": [
+   "instrument PT-713: no signal line, attached to nearest item V-701 (66 pt)",
+   "instrument PAH-713: no signal line, attached to nearest item V-701 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-005",
+  "equipment": {
+   "T-501": "tank",
+   "P-502A": "pump",
+   "V-503": "drum",
+   "K-504": "compressor",
+   "V-505": "drum"
+  },
+  "lines": {
+   "2\"-P-5001": {
+    "start": "T-501",
+    "end": "P-502A",
+    "valves": [
+     "LV-511"
+    ]
+   },
+   "2\"-P-5002": {
+    "start": "P-502A",
+    "end": "V-503",
+    "valves": [
+     "FV-513",
+     "NRV-512"
+    ]
+   },
+   "2\"-P-5003": {
+    "start": "V-503",
+    "end": "K-504",
+    "valves": [
+     "LV-514"
+    ]
+   },
+   "6\"-P-5004": {
+    "start": "K-504",
+    "end": "V-505",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FT-513": {
+    "attached_to": "2\"-P-5002",
+    "method": "signal line"
+   },
+   "TT-516": {
+    "attached_to": "T-501",
+    "method": "signal line"
+   },
+   "LT-514": {
+    "attached_to": "V-503",
+    "method": "signal line"
+   },
+   "LAH-514": {
+    "attached_to": "V-503",
+    "method": "signal line"
+   },
+   "VT-519": {
+    "attached_to": "K-504",
+    "method": "signal line"
+   },
+   "FIC-513": {
+    "attached_to": "2\"-P-5002",
+    "method": "same loop"
+   },
+   "LT-511": {
+    "attached_to": "T-501",
+    "method": "proximity"
+   },
+   "LIC-511": {
+    "attached_to": "T-501",
+    "method": "proximity"
+   },
+   "LAH-511": {
+    "attached_to": "T-501",
+    "method": "proximity"
+   },
+   "LAL-511": {
+    "attached_to": "T-501",
+    "method": "proximity"
+   },
+   "PT-515": {
+    "attached_to": "T-501",
+    "method": "proximity"
+   },
+   "PAH-515": {
+    "attached_to": "T-501",
+    "method": "proximity"
+   },
+   "LIC-514": {
+    "attached_to": "V-503",
+    "method": "same loop"
+   },
+   "VAH-519": {
+    "attached_to": "K-504",
+    "method": "same loop"
+   },
+   "LAH-520": {
+    "attached_to": "V-505",
+    "method": "proximity"
+   },
+   "LAL-520": {
+    "attached_to": "V-505",
+    "method": "proximity"
+   },
+   "LSHH-521": {
+    "attached_to": "V-505",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-517": "T-501",
+   "PSV-518": "V-503",
+   "PSV-522": "V-505"
+  },
+  "review_flags": [
+   "line 2\"-P-5001: no arrowhead, flow direction assumed left to right",
+   "line 2\"-P-5002: no arrowhead, flow direction assumed left to right",
+   "line 2\"-P-5003: no arrowhead, flow direction assumed left to right",
+   "overlapping bubbles near (1082, 330): text LLTIC could not be paired - check by eye",
+   "overlapping bubbles near (1085, 330): text LLTIC could not be paired - check by eye",
+   "instrument LT-511: no signal line, attached to nearest item T-501 (36 pt)",
+   "instrument LIC-511: no signal line, attached to nearest item T-501 (36 pt)",
+   "instrument LAH-511: no signal line, attached to nearest item T-501 (36 pt)",
+   "instrument LAL-511: no signal line, attached to nearest item T-501 (66 pt)",
+   "instrument PT-515: no signal line, attached to nearest item T-501 (65 pt)",
+   "instrument PAH-515: no signal line, attached to nearest item T-501 (65 pt)",
+   "instrument LAH-520: no signal line, attached to nearest item V-505 (36 pt)",
+   "instrument LAL-520: no signal line, attached to nearest item V-505 (65 pt)",
+   "instrument LSHH-521: no signal line, attached to nearest item V-505 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-006",
+  "equipment": {
+   "V-901": "drum",
+   "K-902": "compressor",
+   "E-903": "heat exchanger",
+   "V-904": "drum"
+  },
+  "lines": {
+   "8\"-P-9001": {
+    "start": "V-901",
+    "end": "K-902",
+    "valves": [
+     "LV-911"
+    ]
+   },
+   "3\"-P-9002": {
+    "start": "K-902",
+    "end": "E-903",
+    "valves": []
+   },
+   "3\"-P-9003": {
+    "start": "E-903",
+    "end": "V-904",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-912": {
+    "attached_to": "3\"-P-9003",
+    "method": "signal line"
+   },
+   "LT-911": {
+    "attached_to": "V-901",
+    "method": "signal line"
+   },
+   "LIC-911": {
+    "attached_to": "V-901",
+    "method": "signal line"
+   },
+   "VT-914": {
+    "attached_to": "K-902",
+    "method": "signal line"
+   },
+   "LAH-911": {
+    "attached_to": "V-901",
+    "method": "same loop"
+   },
+   "VAH-914": {
+    "attached_to": "K-902",
+    "method": "same loop"
+   },
+   "LAH-915": {
+    "attached_to": "V-904",
+    "method": "proximity"
+   },
+   "PT-917": {
+    "attached_to": "V-904",
+    "method": "proximity"
+   },
+   "PAH-917": {
+    "attached_to": "V-904",
+    "method": "proximity"
+   },
+   "TT-918": {
+    "attached_to": "V-904",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-913": "V-901"
+  },
+  "review_flags": [
+   "line 3\"-P-9003: no arrowhead, flow direction assumed left to right",
+   "overlapping bubbles near (875, 330): text LTLIC could not be paired - check by eye",
+   "overlapping bubbles near (885, 330): text LTLIC could not be paired - check by eye",
+   "instrument LAH-915: no signal line, attached to nearest item V-904 (36 pt)",
+   "instrument PT-917: no signal line, attached to nearest item V-904 (66 pt)",
+   "instrument PAH-917: no signal line, attached to nearest item V-904 (94 pt)",
+   "instrument TT-918: no signal line, attached to nearest item V-904 (94 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-007",
+  "equipment": {
+   "T-201": "tank",
+   "P-202A": "pump",
+   "C-203": "column",
+   "P-204A": "pump",
+   "E-205": "heat exchanger",
+   "T-206": "tank"
+  },
+  "lines": {
+   "3\"-P-2001": {
+    "start": "T-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "8\"-P-2002": {
+    "start": "P-202A",
+    "end": "C-203",
+    "valves": [
+     "FV-213",
+     "NRV-212"
+    ]
+   },
+   "6\"-P-2003": {
+    "start": "C-203",
+    "end": "P-204A",
+    "valves": [
+     "LV-214"
+    ]
+   },
+   "8\"-P-2004": {
+    "start": "P-204A",
+    "end": "E-205",
+    "valves": [
+     "FV-216",
+     "NRV-215"
+    ]
+   },
+   "2\"-P-2005": {
+    "start": "E-205",
+    "end": "T-206",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-213": {
+    "attached_to": "8\"-P-2002",
+    "method": "signal line"
+   },
+   "FIC-216": {
+    "attached_to": "8\"-P-2004",
+    "method": "signal line"
+   },
+   "LT-214": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "LIC-214": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "LAH-214": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "TT-219": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "TT-222": {
+    "attached_to": "T-206",
+    "method": "signal line"
+   },
+   "FT-213": {
+    "attached_to": "8\"-P-2002",
+    "method": "same loop"
+   },
+   "FAL-213": {
+    "attached_to": "8\"-P-2002",
+    "method": "same loop"
+   },
+   "FT-216": {
+    "attached_to": "8\"-P-2004",
+    "method": "same loop"
+   },
+   "FAL-216": {
+    "attached_to": "8\"-P-2004",
+    "method": "same loop"
+   },
+   "LT-211": {
+    "attached_to": "T-201",
+    "method": "proximity"
+   },
+   "LIC-211": {
+    "attached_to": "T-201",
+    "method": "proximity"
+   },
+   "LAL-214": {
+    "attached_to": "C-203",
+    "method": "same loop"
+   },
+   "PT-218": {
+    "attached_to": "C-203",
+    "method": "proximity"
+   },
+   "PAH-218": {
+    "attached_to": "C-203",
+    "method": "proximity"
+   },
+   "LT-220": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LIC-220": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LAH-220": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LAL-220": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LSHH-221": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-217": "T-201",
+   "PSV-223": "T-206"
+  },
+  "review_flags": [
+   "line 3\"-P-2001: no arrowhead, flow direction assumed left to right",
+   "line 8\"-P-2002: no arrowhead, flow direction assumed left to right",
+   "instrument LT-211: no signal line, attached to nearest item T-201 (36 pt)",
+   "instrument LIC-211: no signal line, attached to nearest item T-201 (36 pt)",
+   "instrument PT-218: no signal line, attached to nearest item C-203 (65 pt)",
+   "instrument PAH-218: no signal line, attached to nearest item C-203 (65 pt)",
+   "instrument LT-220: no signal line, attached to nearest item T-206 (36 pt)",
+   "instrument LIC-220: no signal line, attached to nearest item T-206 (36 pt)",
+   "instrument LAH-220: no signal line, attached to nearest item T-206 (36 pt)",
+   "instrument LAL-220: no signal line, attached to nearest item T-206 (65 pt)",
+   "instrument LSHH-221: no signal line, attached to nearest item T-206 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-008",
+  "equipment": {
+   "T-701": "tank",
+   "P-702A": "pump",
+   "C-703": "column",
+   "P-704A": "pump",
+   "E-705": "heat exchanger",
+   "T-706": "tank"
+  },
+  "lines": {
+   "6\"-P-7001": {
+    "start": "T-701",
+    "end": "P-702A",
+    "valves": [
+     "LV-711"
+    ]
+   },
+   "3\"-P-7002": {
+    "start": "P-702A",
+    "end": "C-703",
+    "valves": [
+     "FV-713",
+     "NRV-712"
+    ]
+   },
+   "3\"-P-7003": {
+    "start": "C-703",
+    "end": "P-704A",
+    "valves": [
+     "LV-714"
+    ]
+   },
+   "6\"-P-7004": {
+    "start": "P-704A",
+    "end": "E-705",
+    "valves": []
+   },
+   "6\"-P-7005": {
+    "start": "E-705",
+    "end": "T-706",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-713": {
+    "attached_to": "3\"-P-7002",
+    "method": "signal line"
+   },
+   "LAH-714": {
+    "attached_to": "C-703",
+    "method": "signal line"
+   },
+   "LIC-718": {
+    "attached_to": "T-706",
+    "method": "signal line"
+   },
+   "LAL-718": {
+    "attached_to": "T-706",
+    "method": "signal line"
+   },
+   "FT-713": {
+    "attached_to": "3\"-P-7002",
+    "method": "same loop"
+   },
+   "FAL-713": {
+    "attached_to": "3\"-P-7002",
+    "method": "same loop"
+   },
+   "LAH-711": {
+    "attached_to": "T-701",
+    "method": "proximity"
+   },
+   "LAL-711": {
+    "attached_to": "T-701",
+    "method": "proximity"
+   },
+   "LT-714": {
+    "attached_to": "C-703",
+    "method": "same loop"
+   },
+   "LIC-714": {
+    "attached_to": "C-703",
+    "method": "same loop"
+   },
+   "LAL-714": {
+    "attached_to": "C-703",
+    "method": "same loop"
+   },
+   "PT-716": {
+    "attached_to": "C-703",
+    "method": "proximity"
+   },
+   "LT-718": {
+    "attached_to": "T-706",
+    "method": "same loop"
+   },
+   "LAH-718": {
+    "attached_to": "T-706",
+    "method": "same loop"
+   },
+   "LSHH-719": {
+    "attached_to": "T-706",
+    "method": "proximity"
+   },
+   "PT-720": {
+    "attached_to": "T-706",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-717": "C-703",
+   "PSV-715": "T-701",
+   "PSV-722": "T-706"
+  },
+  "review_flags": [
+   "line 6\"-P-7004: no arrowhead, flow direction assumed left to right",
+   "line 6\"-P-7005: no arrowhead, flow direction assumed left to right",
+   "overlapping bubbles near (278, 333): text LTLIC could not be paired - check by eye",
+   "overlapping bubbles near (289, 333): text LTLIC could not be paired - check by eye",
+   "instrument LAH-711: no signal line, attached to nearest item T-701 (36 pt)",
+   "instrument LAL-711: no signal line, attached to nearest item T-701 (65 pt)",
+   "instrument PT-716: no signal line, attached to nearest item C-703 (65 pt)",
+   "instrument LSHH-719: no signal line, attached to nearest item T-706 (65 pt)",
+   "instrument PT-720: no signal line, attached to nearest item T-706 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-009",
+  "equipment": {
+   "T-201": "tank",
+   "P-202A": "pump",
+   "C-203": "column",
+   "P-204A": "pump",
+   "E-205": "heat exchanger",
+   "T-206": "tank"
+  },
+  "lines": {
+   "4\"-P-2001": {
+    "start": "T-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "6\"-P-2002": {
+    "start": "P-202A",
+    "end": "C-203",
+    "valves": [
+     "FV-213",
+     "NRV-212"
+    ]
+   },
+   "2\"-P-2003": {
+    "start": "C-203",
+    "end": "P-204A",
+    "valves": [
+     "LV-214"
+    ]
+   },
+   "8\"-P-2004": {
+    "start": "P-204A",
+    "end": "E-205",
+    "valves": [
+     "FV-216",
+     "NRV-215"
+    ]
+   },
+   "6\"-P-2005": {
+    "start": "E-205",
+    "end": "T-206",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-213": {
+    "attached_to": "6\"-P-2002",
+    "method": "signal line"
+   },
+   "FAL-213": {
+    "attached_to": "6\"-P-2002",
+    "method": "signal line"
+   },
+   "FAL-216": {
+    "attached_to": "8\"-P-2004",
+    "method": "signal line"
+   },
+   "LSHH-220": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "PT-221": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "FT-213": {
+    "attached_to": "6\"-P-2002",
+    "method": "same loop"
+   },
+   "FIC-216": {
+    "attached_to": "8\"-P-2004",
+    "method": "same loop"
+   },
+   "FT-216": {
+    "attached_to": "8\"-P-2004",
+    "method": "same loop"
+   },
+   "LAH-211": {
+    "attached_to": "T-201",
+    "method": "proximity"
+   },
+   "LSHH-217": {
+    "attached_to": "T-201",
+    "method": "proximity"
+   },
+   "PT-218": {
+    "attached_to": "T-201",
+    "method": "proximity"
+   },
+   "LT-214": {
+    "attached_to": "C-203",
+    "method": "proximity"
+   },
+   "LT-223": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LIC-223": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LAH-223": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LSHH-224": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "PT-225": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-222": "C-203",
+   "PSV-219": "T-201",
+   "PSV-226": "T-206"
+  },
+  "review_flags": [
+   "line 4\"-P-2001: no arrowhead, flow direction assumed left to right",
+   "overlapping bubbles near (278, 333): text LLTIC could not be paired - check by eye",
+   "overlapping bubbles near (282, 333): text LLTIC could not be paired - check by eye",
+   "instrument LAH-211: no signal line, attached to nearest item T-201 (36 pt)",
+   "instrument LSHH-217: no signal line, attached to nearest item T-201 (65 pt)",
+   "instrument PT-218: no signal line, attached to nearest item T-201 (65 pt)",
+   "instrument LT-214: no signal line, attached to nearest item C-203 (36 pt)",
+   "instrument LT-223: no signal line, attached to nearest item T-206 (36 pt)",
+   "instrument LIC-223: no signal line, attached to nearest item T-206 (36 pt)",
+   "instrument LAH-223: no signal line, attached to nearest item T-206 (37 pt)",
+   "instrument LSHH-224: no signal line, attached to nearest item T-206 (65 pt)",
+   "instrument PT-225: no signal line, attached to nearest item T-206 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-010",
+  "equipment": {
+   "T-201": "tank",
+   "P-202A": "pump",
+   "E-203": "heat exchanger",
+   "V-204": "drum",
+   "P-205A": "pump",
+   "T-206": "tank"
+  },
+  "lines": {
+   "3\"-P-2001": {
+    "start": "T-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "4\"-P-2002": {
+    "start": "P-202A",
+    "end": "E-203",
+    "valves": [
+     "NRV-212"
+    ]
+   },
+   "6\"-P-2003": {
+    "start": "E-203",
+    "end": "V-204",
+    "valves": []
+   },
+   "2\"-P-2004": {
+    "start": "V-204",
+    "end": "P-205A",
+    "valves": [
+     "LV-214"
+    ]
+   },
+   "4\"-P-2005": {
+    "start": "P-205A",
+    "end": "T-206",
+    "valves": [
+     "FV-216",
+     "NRV-215"
+    ]
+   }
+  },
+  "instruments": {
+   "FIC-216": {
+    "attached_to": "4\"-P-2005",
+    "method": "signal line"
+   },
+   "FT-216": {
+    "attached_to": "4\"-P-2005",
+    "method": "signal line"
+   },
+   "PT-217": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LT-214": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LAL-214": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "TT-213": {
+    "attached_to": "6\"-P-2003",
+    "method": "proximity"
+   },
+   "FAL-216": {
+    "attached_to": "4\"-P-2005",
+    "method": "same loop"
+   },
+   "LT-211": {
+    "attached_to": "T-201",
+    "method": "proximity"
+   },
+   "LIC-211": {
+    "attached_to": "T-201",
+    "method": "proximity"
+   },
+   "LAH-211": {
+    "attached_to": "T-201",
+    "method": "proximity"
+   },
+   "PAH-217": {
+    "attached_to": "T-201",
+    "method": "same loop"
+   },
+   "LIC-214": {
+    "attached_to": "V-204",
+    "method": "same loop"
+   },
+   "LAH-214": {
+    "attached_to": "V-204",
+    "method": "same loop"
+   },
+   "PAH-220": {
+    "attached_to": "V-204",
+    "method": "proximity"
+   },
+   "LAH-221": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LAL-221": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LSHH-222": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "PT-223": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "TT-224": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-218": "T-201"
+  },
+  "review_flags": [
+   "overlapping bubbles near (1276, 333): text LTLIC could not be paired - check by eye",
+   "overlapping bubbles near (1286, 333): text LTLIC could not be paired - check by eye",
+   "instrument TT-213: no signal line, attached to nearest item 6\"-P-2003 (39 pt)",
+   "instrument LT-211: no signal line, attached to nearest item T-201 (36 pt)",
+   "instrument LIC-211: no signal line, attached to nearest item T-201 (36 pt)",
+   "instrument LAH-211: no signal line, attached to nearest item T-201 (36 pt)",
+   "instrument PAH-220: no signal line, attached to nearest item V-204 (94 pt)",
+   "instrument LAH-221: no signal line, attached to nearest item T-206 (36 pt)",
+   "instrument LAL-221: no signal line, attached to nearest item T-206 (65 pt)",
+   "instrument LSHH-222: no signal line, attached to nearest item T-206 (65 pt)",
+   "instrument PT-223: no signal line, attached to nearest item T-206 (65 pt)",
+   "instrument TT-224: no signal line, attached to nearest item T-206 (94 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-011",
+  "equipment": {
+   "V-501": "drum",
+   "K-502": "compressor",
+   "E-503": "heat exchanger",
+   "V-504": "drum"
+  },
+  "lines": {
+   "8\"-P-5001": {
+    "start": "V-501",
+    "end": "K-502",
+    "valves": [
+     "LV-511"
+    ]
+   },
+   "8\"-P-5002": {
+    "start": "K-502",
+    "end": "E-503",
+    "valves": []
+   },
+   "6\"-P-5003": {
+    "start": "E-503",
+    "end": "V-504",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LT-511": {
+    "attached_to": "V-501",
+    "method": "signal line"
+   },
+   "PAH-514": {
+    "attached_to": "V-501",
+    "method": "signal line"
+   },
+   "LT-516": {
+    "attached_to": "V-504",
+    "method": "signal line"
+   },
+   "LIC-516": {
+    "attached_to": "V-504",
+    "method": "signal line"
+   },
+   "TT-512": {
+    "attached_to": "6\"-P-5003",
+    "method": "proximity"
+   },
+   "LIC-511": {
+    "attached_to": "V-501",
+    "method": "same loop"
+   },
+   "LAH-511": {
+    "attached_to": "V-501",
+    "method": "same loop"
+   },
+   "LAL-511": {
+    "attached_to": "V-501",
+    "method": "same loop"
+   },
+   "LSHH-513": {
+    "attached_to": "V-501",
+    "method": "proximity"
+   },
+   "PT-514": {
+    "attached_to": "V-501",
+    "method": "same loop"
+   },
+   "TT-517": {
+    "attached_to": "V-504",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-515": "V-501",
+   "PSV-518": "V-504"
+  },
+  "review_flags": [
+   "instrument TT-512: no signal line, attached to nearest item 6\"-P-5003 (39 pt)",
+   "instrument LSHH-513: no signal line, attached to nearest item V-501 (65 pt)",
+   "instrument TT-517: no signal line, attached to nearest item V-504 (36 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-012",
+  "equipment": {
+   "V-401": "drum",
+   "P-402A": "pump",
+   "E-403": "heat exchanger",
+   "C-404": "column",
+   "P-405A": "pump",
+   "T-406": "tank"
+  },
+  "lines": {
+   "4\"-P-4001": {
+    "start": "V-401",
+    "end": "P-402A",
+    "valves": [
+     "LV-411"
+    ]
+   },
+   "6\"-P-4002": {
+    "start": "P-402A",
+    "end": "E-403",
+    "valves": [
+     "FV-413",
+     "NRV-412"
+    ]
+   },
+   "8\"-P-4003": {
+    "start": "E-403",
+    "end": "C-404",
+    "valves": []
+   },
+   "8\"-P-4004": {
+    "start": "C-404",
+    "end": "P-405A",
+    "valves": [
+     "LV-415"
+    ]
+   },
+   "4\"-P-4005": {
+    "start": "P-405A",
+    "end": "T-406",
+    "valves": [
+     "NRV-416"
+    ]
+   }
+  },
+  "instruments": {
+   "TT-414": {
+    "attached_to": "8\"-P-4003",
+    "method": "signal line"
+   },
+   "TAH-414": {
+    "attached_to": "8\"-P-4003",
+    "method": "signal line"
+   },
+   "LIC-415": {
+    "attached_to": "C-404",
+    "method": "signal line"
+   },
+   "PT-419": {
+    "attached_to": "C-404",
+    "method": "signal line"
+   },
+   "LIC-421": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "FIC-413": {
+    "attached_to": "6\"-P-4002",
+    "method": "proximity"
+   },
+   "FT-413": {
+    "attached_to": "6\"-P-4002",
+    "method": "proximity"
+   },
+   "FAL-413": {
+    "attached_to": "E-403",
+    "method": "proximity"
+   },
+   "LT-411": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "LIC-411": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "LAH-411": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "LAL-411": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "LSHH-417": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "LT-415": {
+    "attached_to": "C-404",
+    "method": "same loop"
+   },
+   "LAH-415": {
+    "attached_to": "C-404",
+    "method": "same loop"
+   },
+   "LAL-415": {
+    "attached_to": "C-404",
+    "method": "same loop"
+   },
+   "PAH-419": {
+    "attached_to": "C-404",
+    "method": "same loop"
+   },
+   "LT-421": {
+    "attached_to": "T-406",
+    "method": "same loop"
+   },
+   "LAH-421": {
+    "attached_to": "T-406",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-420": "C-404",
+   "PSV-418": "V-401",
+   "PSV-422": "T-406"
+  },
+  "review_flags": [
+   "line 4\"-P-4001: no arrowhead, flow direction assumed left to right",
+   "line 8\"-P-4003: no arrowhead, flow direction assumed left to right",
+   "line 8\"-P-4004: no arrowhead, flow direction assumed left to right",
+   "instrument FIC-413: no signal line, attached to nearest item 6\"-P-4002 (39 pt)",
+   "instrument FT-413: no signal line, attached to nearest item 6\"-P-4002 (39 pt)",
+   "instrument FAL-413: no signal line, attached to nearest item E-403 (24 pt)",
+   "instrument LT-411: no signal line, attached to nearest item V-401 (36 pt)",
+   "instrument LIC-411: no signal line, attached to nearest item V-401 (36 pt)",
+   "instrument LAH-411: no signal line, attached to nearest item V-401 (41 pt)",
+   "instrument LAL-411: no signal line, attached to nearest item V-401 (66 pt)",
+   "instrument LSHH-417: no signal line, attached to nearest item V-401 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-013",
+  "equipment": {
+   "V-401": "drum",
+   "P-402A": "pump",
+   "E-403": "heat exchanger",
+   "V-404": "drum",
+   "P-405A": "pump",
+   "T-406": "tank"
+  },
+  "lines": {
+   "8\"-P-4001": {
+    "start": "V-401",
+    "end": "P-402A",
+    "valves": [
+     "LV-411"
+    ]
+   },
+   "2\"-P-4002": {
+    "start": "P-402A",
+    "end": "E-403",
+    "valves": [
+     "NRV-412"
+    ]
+   },
+   "6\"-P-4003": {
+    "start": "E-403",
+    "end": "V-404",
+    "valves": []
+   },
+   "4\"-P-4004": {
+    "start": "V-404",
+    "end": "P-405A",
+    "valves": [
+     "LV-414"
+    ]
+   },
+   "8\"-P-4005": {
+    "start": "P-405A",
+    "end": "T-406",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-413": {
+    "attached_to": "6\"-P-4003",
+    "method": "signal line"
+   },
+   "LSHH-415": {
+    "attached_to": "V-401",
+    "method": "signal line"
+   },
+   "LAH-420": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "TAH-413": {
+    "attached_to": "6\"-P-4003",
+    "method": "same loop"
+   },
+   "LT-411": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "LIC-411": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "LAH-411": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "PT-416": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "PAH-416": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "LAH-414": {
+    "attached_to": "V-404",
+    "method": "proximity"
+   },
+   "LT-420": {
+    "attached_to": "T-406",
+    "method": "same loop"
+   },
+   "LIC-420": {
+    "attached_to": "T-406",
+    "method": "same loop"
+   },
+   "LSHH-421": {
+    "attached_to": "T-406",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-419": "V-404",
+   "PSV-422": "T-406"
+  },
+  "review_flags": [
+   "overlapping bubbles near (872, 330): text LT could not be paired - check by eye",
+   "overlapping bubbles near (885, 330): text LIC could not be paired - check by eye",
+   "instrument LT-411: no signal line, attached to nearest item V-401 (36 pt)",
+   "instrument LIC-411: no signal line, attached to nearest item V-401 (36 pt)",
+   "instrument LAH-411: no signal line, attached to nearest item V-401 (41 pt)",
+   "instrument PT-416: no signal line, attached to nearest item V-401 (65 pt)",
+   "instrument PAH-416: no signal line, attached to nearest item V-401 (68 pt)",
+   "instrument LAH-414: no signal line, attached to nearest item V-404 (36 pt)",
+   "instrument LSHH-421: no signal line, attached to nearest item T-406 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-014",
+  "equipment": {
+   "T-401": "tank",
+   "P-402A": "pump",
+   "C-403": "column",
+   "P-404A": "pump",
+   "E-405": "heat exchanger",
+   "T-406": "tank"
+  },
+  "lines": {
+   "2\"-P-4001": {
+    "start": "T-401",
+    "end": "P-402A",
+    "valves": [
+     "LV-411"
+    ]
+   },
+   "3\"-P-4002": {
+    "start": "P-402A",
+    "end": "C-403",
+    "valves": []
+   },
+   "3\"-P-4003": {
+    "start": "C-403",
+    "end": "P-404A",
+    "valves": [
+     "LV-412"
+    ]
+   },
+   "2\"-P-4004": {
+    "start": "P-404A",
+    "end": "E-405",
+    "valves": [
+     "FV-413"
+    ]
+   },
+   "8\"-P-4005": {
+    "start": "E-405",
+    "end": "T-406",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LT-411": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "PT-418": {
+    "attached_to": "C-403",
+    "method": "signal line"
+   },
+   "FIC-413": {
+    "attached_to": "2\"-P-4004",
+    "method": "proximity"
+   },
+   "FT-413": {
+    "attached_to": "P-404A",
+    "method": "proximity"
+   },
+   "TT-414": {
+    "attached_to": "8\"-P-4005",
+    "method": "proximity"
+   },
+   "TAH-414": {
+    "attached_to": "8\"-P-4005",
+    "method": "proximity"
+   },
+   "PT-415": {
+    "attached_to": "T-401",
+    "method": "proximity"
+   },
+   "TT-416": {
+    "attached_to": "T-401",
+    "method": "proximity"
+   },
+   "LAH-412": {
+    "attached_to": "C-403",
+    "method": "proximity"
+   },
+   "TT-419": {
+    "attached_to": "C-403",
+    "method": "proximity"
+   },
+   "LT-421": {
+    "attached_to": "T-406",
+    "method": "proximity"
+   },
+   "LIC-421": {
+    "attached_to": "T-406",
+    "method": "proximity"
+   },
+   "LAL-421": {
+    "attached_to": "T-406",
+    "method": "proximity"
+   },
+   "TT-423": {
+    "attached_to": "T-406",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-420": "C-403",
+   "PSV-417": "T-401",
+   "PSV-424": "T-406"
+  },
+  "review_flags": [
+   "line 2\"-P-4004: no arrowhead, flow direction assumed left to right",
+   "overlapping bubbles near (675, 300): text LTLIC could not be paired - check by eye",
+   "overlapping bubbles near (683, 300): text LTLIC could not be paired - check by eye",
+   "overlapping bubbles near (1278, 304): text PT could not be paired - check by eye",
+   "overlapping bubbles near (1292, 304): text PAH could not be paired - check by eye",
+   "instrument FIC-413: no signal line, attached to nearest item 2\"-P-4004 (39 pt)",
+   "instrument FT-413: no signal line, attached to nearest item P-404A (27 pt)",
+   "instrument TT-414: no signal line, attached to nearest item 8\"-P-4005 (39 pt)",
+   "instrument TAH-414: no signal line, attached to nearest item 8\"-P-4005 (39 pt)",
+   "instrument PT-415: no signal line, attached to nearest item T-401 (65 pt)",
+   "instrument TT-416: no signal line, attached to nearest item T-401 (65 pt)",
+   "instrument LAH-412: no signal line, attached to nearest item C-403 (36 pt)",
+   "instrument TT-419: no signal line, attached to nearest item C-403 (65 pt)",
+   "instrument LT-421: no signal line, attached to nearest item T-406 (36 pt)",
+   "instrument LIC-421: no signal line, attached to nearest item T-406 (36 pt)",
+   "instrument LAL-421: no signal line, attached to nearest item T-406 (36 pt)",
+   "instrument TT-423: no signal line, attached to nearest item T-406 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-015",
+  "equipment": {
+   "T-201": "tank",
+   "P-202A": "pump",
+   "C-203": "column"
+  },
+  "lines": {
+   "2\"-P-2001": {
+    "start": "T-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "8\"-P-2002": {
+    "start": "P-202A",
+    "end": "C-203",
+    "valves": [
+     "FV-213",
+     "NRV-212"
+    ]
+   }
+  },
+  "instruments": {
+   "LIC-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "FIC-213": {
+    "attached_to": "8\"-P-2002",
+    "method": "proximity"
+   },
+   "FT-213": {
+    "attached_to": "P-202A",
+    "method": "proximity"
+   },
+   "LT-211": {
+    "attached_to": "T-201",
+    "method": "same loop"
+   },
+   "LAH-211": {
+    "attached_to": "T-201",
+    "method": "same loop"
+   },
+   "LSHH-214": {
+    "attached_to": "T-201",
+    "method": "proximity"
+   },
+   "LT-217": {
+    "attached_to": "C-203",
+    "method": "proximity"
+   },
+   "PT-218": {
+    "attached_to": "C-203",
+    "method": "proximity"
+   },
+   "PAH-218": {
+    "attached_to": "C-203",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-219": "C-203",
+   "PSV-216": "T-201"
+  },
+  "review_flags": [
+   "line 8\"-P-2002: no arrowhead, flow direction assumed left to right",
+   "instrument FIC-213: no signal line, attached to nearest item 8\"-P-2002 (39 pt)",
+   "instrument FT-213: no signal line, attached to nearest item P-202A (27 pt)",
+   "instrument LSHH-214: no signal line, attached to nearest item T-201 (65 pt)",
+   "instrument LT-217: no signal line, attached to nearest item C-203 (36 pt)",
+   "instrument PT-218: no signal line, attached to nearest item C-203 (65 pt)",
+   "instrument PAH-218: no signal line, attached to nearest item C-203 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-016",
+  "equipment": {
+   "V-901": "drum",
+   "P-902A": "pump",
+   "E-903": "heat exchanger",
+   "C-904": "column",
+   "P-905A": "pump",
+   "T-906": "tank"
+  },
+  "lines": {
+   "3\"-P-9001": {
+    "start": "V-901",
+    "end": "P-902A",
+    "valves": [
+     "LV-911"
+    ]
+   },
+   "6\"-P-9002": {
+    "start": "P-902A",
+    "end": "E-903",
+    "valves": [
+     "NRV-912"
+    ]
+   },
+   "3\"-P-9003": {
+    "start": "E-903",
+    "end": "C-904",
+    "valves": []
+   },
+   "2\"-P-9004": {
+    "start": "C-904",
+    "end": "P-905A",
+    "valves": [
+     "LV-914"
+    ]
+   },
+   "2\"-P-9005": {
+    "start": "P-905A",
+    "end": "T-906",
+    "valves": [
+     "FV-916",
+     "NRV-915"
+    ]
+   }
+  },
+  "instruments": {
+   "TT-913": {
+    "attached_to": "3\"-P-9003",
+    "method": "signal line"
+   },
+   "FIC-916": {
+    "attached_to": "2\"-P-9005",
+    "method": "signal line"
+   },
+   "LIC-911": {
+    "attached_to": "V-901",
+    "method": "signal line"
+   },
+   "PT-917": {
+    "attached_to": "V-901",
+    "method": "signal line"
+   },
+   "FT-916": {
+    "attached_to": "2\"-P-9005",
+    "method": "same loop"
+   },
+   "FAL-916": {
+    "attached_to": "2\"-P-9005",
+    "method": "same loop"
+   },
+   "LT-911": {
+    "attached_to": "V-901",
+    "method": "same loop"
+   },
+   "LAH-911": {
+    "attached_to": "V-901",
+    "method": "same loop"
+   },
+   "TT-918": {
+    "attached_to": "V-901",
+    "method": "proximity"
+   },
+   "LT-914": {
+    "attached_to": "C-904",
+    "method": "proximity"
+   },
+   "LIC-914": {
+    "attached_to": "C-904",
+    "method": "proximity"
+   },
+   "LAH-914": {
+    "attached_to": "C-904",
+    "method": "proximity"
+   },
+   "PT-920": {
+    "attached_to": "C-904",
+    "method": "proximity"
+   },
+   "PAH-920": {
+    "attached_to": "C-904",
+    "method": "proximity"
+   },
+   "LT-922": {
+    "attached_to": "T-906",
+    "method": "proximity"
+   },
+   "LIC-922": {
+    "attached_to": "T-906",
+    "method": "proximity"
+   },
+   "LAH-922": {
+    "attached_to": "T-906",
+    "method": "proximity"
+   },
+   "LSHH-923": {
+    "attached_to": "T-906",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-921": "C-904",
+   "PSV-919": "V-901",
+   "PSV-925": "T-906"
+  },
+  "review_flags": [
+   "instrument TT-918: no signal line, attached to nearest item V-901 (65 pt)",
+   "instrument LT-914: no signal line, attached to nearest item C-904 (44 pt)",
+   "instrument LIC-914: no signal line, attached to nearest item C-904 (36 pt)",
+   "instrument LAH-914: no signal line, attached to nearest item C-904 (38 pt)",
+   "instrument PT-920: no signal line, attached to nearest item C-904 (66 pt)",
+   "instrument PAH-920: no signal line, attached to nearest item C-904 (65 pt)",
+   "instrument LT-922: no signal line, attached to nearest item T-906 (36 pt)",
+   "instrument LIC-922: no signal line, attached to nearest item T-906 (36 pt)",
+   "instrument LAH-922: no signal line, attached to nearest item T-906 (36 pt)",
+   "instrument LSHH-923: no signal line, attached to nearest item T-906 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-017",
+  "equipment": {
+   "V-201": "drum",
+   "P-202A": "pump",
+   "E-203": "heat exchanger",
+   "C-204": "column",
+   "P-205A": "pump",
+   "T-206": "tank"
+  },
+  "lines": {
+   "8\"-P-2001": {
+    "start": "V-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "4\"-P-2002": {
+    "start": "P-202A",
+    "end": "E-203",
+    "valves": []
+   },
+   "2\"-P-2003": {
+    "start": "E-203",
+    "end": "C-204",
+    "valves": []
+   },
+   "8\"-P-2004": {
+    "start": "C-204",
+    "end": "P-205A",
+    "valves": [
+     "LV-212"
+    ]
+   },
+   "4\"-P-2005": {
+    "start": "P-205A",
+    "end": "T-206",
+    "valves": [
+     "FV-214",
+     "NRV-213"
+    ]
+   }
+  },
+  "instruments": {
+   "FAL-214": {
+    "attached_to": "4\"-P-2005",
+    "method": "signal line"
+   },
+   "LIC-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "PAH-215": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "FIC-214": {
+    "attached_to": "4\"-P-2005",
+    "method": "same loop"
+   },
+   "FT-214": {
+    "attached_to": "4\"-P-2005",
+    "method": "same loop"
+   },
+   "LT-211": {
+    "attached_to": "V-201",
+    "method": "same loop"
+   },
+   "LAH-211": {
+    "attached_to": "V-201",
+    "method": "same loop"
+   },
+   "PT-215": {
+    "attached_to": "V-201",
+    "method": "same loop"
+   },
+   "LT-212": {
+    "attached_to": "C-204",
+    "method": "proximity"
+   },
+   "LIC-212": {
+    "attached_to": "C-204",
+    "method": "proximity"
+   },
+   "LAH-212": {
+    "attached_to": "C-204",
+    "method": "proximity"
+   },
+   "LSHH-217": {
+    "attached_to": "C-204",
+    "method": "proximity"
+   },
+   "PT-218": {
+    "attached_to": "C-204",
+    "method": "proximity"
+   },
+   "LT-220": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   },
+   "LIC-220": {
+    "attached_to": "T-206",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-219": "C-204",
+   "PSV-216": "V-201",
+   "PSV-221": "T-206"
+  },
+  "review_flags": [
+   "instrument LT-212: no signal line, attached to nearest item C-204 (37 pt)",
+   "instrument LIC-212: no signal line, attached to nearest item C-204 (36 pt)",
+   "instrument LAH-212: no signal line, attached to nearest item C-204 (40 pt)",
+   "instrument LSHH-217: no signal line, attached to nearest item C-204 (65 pt)",
+   "instrument PT-218: no signal line, attached to nearest item C-204 (65 pt)",
+   "instrument LT-220: no signal line, attached to nearest item T-206 (36 pt)",
+   "instrument LIC-220: no signal line, attached to nearest item T-206 (36 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-018",
+  "equipment": {
+   "V-801": "drum",
+   "K-802": "compressor",
+   "E-803": "heat exchanger",
+   "V-804": "drum"
+  },
+  "lines": {
+   "2\"-P-8001": {
+    "start": "V-801",
+    "end": "K-802",
+    "valves": [
+     "LV-811"
+    ]
+   },
+   "4\"-P-8002": {
+    "start": "K-802",
+    "end": "E-803",
+    "valves": []
+   },
+   "8\"-P-8003": {
+    "start": "E-803",
+    "end": "V-804",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "PT-813": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "PAH-813": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LT-811": {
+    "attached_to": "V-801",
+    "method": "proximity"
+   },
+   "LIC-811": {
+    "attached_to": "V-801",
+    "method": "proximity"
+   },
+   "LAL-811": {
+    "attached_to": "V-801",
+    "method": "proximity"
+   },
+   "LSHH-812": {
+    "attached_to": "V-801",
+    "method": "proximity"
+   },
+   "VT-814": {
+    "attached_to": "K-802",
+    "method": "proximity"
+   },
+   "VAH-814": {
+    "attached_to": "K-802",
+    "method": "proximity"
+   },
+   "LAH-815": {
+    "attached_to": "V-804",
+    "method": "proximity"
+   },
+   "PAH-817": {
+    "attached_to": "V-804",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-818": "V-804"
+  },
+  "review_flags": [
+   "line 2\"-P-8001: no arrowhead, flow direction assumed left to right",
+   "overlapping bubbles near (873, 330): text LT could not be paired - check by eye",
+   "overlapping bubbles near (885, 330): text LIC could not be paired - check by eye",
+   "overlapping bubbles near (883, 301): text 815 could not be paired - check by eye",
+   "overlapping bubbles near (897, 301): text 816 could not be paired - check by eye",
+   "overlapping bubbles near (912, 301): text 817 could not be paired - check by eye",
+   "instrument LT-811: no signal line, attached to nearest item V-801 (36 pt)",
+   "instrument LIC-811: no signal line, attached to nearest item V-801 (36 pt)",
+   "instrument LAL-811: no signal line, attached to nearest item V-801 (36 pt)",
+   "instrument LSHH-812: no signal line, attached to nearest item V-801 (65 pt)",
+   "instrument VT-814: no signal line, attached to nearest item K-802 (36 pt)",
+   "instrument VAH-814: no signal line, attached to nearest item K-802 (36 pt)",
+   "instrument LAH-815: no signal line, attached to nearest item V-804 (36 pt)",
+   "instrument PAH-817: no signal line, attached to nearest item V-804 (94 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-019",
+  "equipment": {
+   "T-601": "tank",
+   "P-602A": "pump",
+   "E-603": "heat exchanger",
+   "V-604": "drum"
+  },
+  "lines": {
+   "8\"-P-6001": {
+    "start": "T-601",
+    "end": "P-602A",
+    "valves": [
+     "LV-611"
+    ]
+   },
+   "4\"-P-6002": {
+    "start": "P-602A",
+    "end": "E-603",
+    "valves": [
+     "NRV-612"
+    ]
+   },
+   "4\"-P-6003": {
+    "start": "E-603",
+    "end": "V-604",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LAL-611": {
+    "attached_to": "T-601",
+    "method": "signal line"
+   },
+   "LAH-616": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "LT-611": {
+    "attached_to": "T-601",
+    "method": "same loop"
+   },
+   "LIC-611": {
+    "attached_to": "T-601",
+    "method": "same loop"
+   },
+   "LAH-611": {
+    "attached_to": "T-601",
+    "method": "same loop"
+   },
+   "PT-613": {
+    "attached_to": "T-601",
+    "method": "proximity"
+   },
+   "PAH-613": {
+    "attached_to": "T-601",
+    "method": "proximity"
+   },
+   "TT-614": {
+    "attached_to": "T-601",
+    "method": "proximity"
+   },
+   "LT-616": {
+    "attached_to": "V-604",
+    "method": "same loop"
+   },
+   "LIC-616": {
+    "attached_to": "V-604",
+    "method": "same loop"
+   },
+   "PT-618": {
+    "attached_to": "V-604",
+    "method": "proximity"
+   },
+   "PAH-618": {
+    "attached_to": "V-604",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-615": "T-601",
+   "PSV-619": "V-604"
+  },
+  "review_flags": [
+   "line 8\"-P-6001: no arrowhead, flow direction assumed left to right",
+   "line 4\"-P-6002: no arrowhead, flow direction assumed left to right",
+   "overlapping bubbles near (869, 301): text 616 could not be paired - check by eye",
+   "overlapping bubbles near (885, 301): text 617 could not be paired - check by eye",
+   "instrument PT-613: no signal line, attached to nearest item T-601 (65 pt)",
+   "instrument PAH-613: no signal line, attached to nearest item T-601 (65 pt)",
+   "instrument TT-614: no signal line, attached to nearest item T-601 (94 pt)",
+   "instrument PT-618: no signal line, attached to nearest item V-604 (65 pt)",
+   "instrument PAH-618: no signal line, attached to nearest item V-604 (94 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-HARD-020",
+  "equipment": {
+   "V-601": "drum",
+   "P-602A": "pump",
+   "E-603": "heat exchanger",
+   "V-604": "drum"
+  },
+  "lines": {
+   "4\"-P-6001": {
+    "start": "V-601",
+    "end": "P-602A",
+    "valves": [
+     "LV-611"
+    ]
+   },
+   "8\"-P-6002": {
+    "start": "P-602A",
+    "end": "E-603",
+    "valves": [
+     "FV-613",
+     "NRV-612"
+    ]
+   },
+   "6\"-P-6003": {
+    "start": "E-603",
+    "end": "V-604",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LIC-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LAH-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LT-616": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "LIC-616": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "PT-617": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "PAH-617": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "FIC-613": {
+    "attached_to": "8\"-P-6002",
+    "method": "proximity"
+   },
+   "FT-613": {
+    "attached_to": "8\"-P-6002",
+    "method": "proximity"
+   },
+   "FAL-613": {
+    "attached_to": "E-603",
+    "method": "proximity"
+   },
+   "LT-611": {
+    "attached_to": "V-601",
+    "method": "same loop"
+   },
+   "PT-614": {
+    "attached_to": "V-601",
+    "method": "proximity"
+   },
+   "PAH-614": {
+    "attached_to": "V-601",
+    "method": "proximity"
+   },
+   "LAH-616": {
+    "attached_to": "V-604",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-615": "V-601",
+   "PSV-618": "V-604"
+  },
+  "review_flags": [
+   "instrument FIC-613: no signal line, attached to nearest item 8\"-P-6002 (39 pt)",
+   "instrument FT-613: no signal line, attached to nearest item 8\"-P-6002 (39 pt)",
+   "instrument FAL-613: no signal line, attached to nearest item E-603 (24 pt)",
+   "instrument PT-614: no signal line, attached to nearest item V-601 (66 pt)",
+   "instrument PAH-614: no signal line, attached to nearest item V-601 (65 pt)"
+  ]
+ }
+]

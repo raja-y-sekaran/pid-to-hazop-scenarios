@@ -2,13 +2,36 @@
 
 **Read a P&ID issued as a vector PDF (equipment, lines, flow direction, valves, relief valves, instruments) and turn it into a first-draft HAZOP worksheet. Every safeguard is traced to a tag on the drawing, and every missing safeguard is flagged for the team to discuss.**
 
-![What the reader extracted from a synthetic P&ID](docs/annotated_pid.png)
+![CI](https://github.com/rajapune-create/pid-to-hazop-scenarios/actions/workflows/ci.yml/badge.svg)
 
-## Why it matters
+![What the reader extracted from a synthetic P&ID](reports/figures/annotated_pid.png)
+
+## Problem statement
 
 Before a HAZOP or PHA revalidation, someone spends days going through each P&ID: listing the nodes, writing down the likely causes for each guideword, and noting which alarms, trips and relief valves are actually on the drawing. It is slow, and it is easy to miss a node or a missing check valve. Meeting time is expensive, and it is better spent challenging scenarios than transcribing drawings.
 
 This prototype does the transcription. The worksheet it produces is a **starting draft for the HAZOP team**. Severity, likelihood and recommendations stay with the team.
+
+## Features
+
+- Reads vector-PDF P&IDs: equipment, process lines with flow direction, control and check valves, relief valves, instruments
+- Ties each instrument to what it measures by signal line, then by loop, then by proximity (flagged)
+- Sends anything uncertain to a `Review_flags` sheet instead of guessing
+- Drafts guideword HAZOP rows per equipment type, with causes taken from the drawing's topology
+- Lists only safeguards that are on the drawing, each with its tag, and writes a gap note where one is expected but missing
+- One Excel workbook per drawing; a FastAPI `/hazop` endpoint takes an uploaded PDF
+
+## Tech stack
+
+| Tool | Used for | Why this one |
+|---|---|---|
+| Python | Everything | |
+| pdfplumber | Text and vector geometry (lines, widths, curves) from the PDF | A vector P&ID already holds exact coordinates, so no OCR or ML is needed to read it |
+| NumPy | Geometry: distances to polylines, arrowheads, bounding boxes | |
+| pandas, openpyxl | HAZOP worksheets | HAZOP teams work in Excel |
+| Matplotlib | Synthetic drawings and annotated figures | The generator writes real vector PDFs plus the truth for scoring |
+| FastAPI | `/hazop` upload endpoint | The course's deployment step: lightweight, with interactive docs |
+| pytest, GitHub Actions | Tag grammar, geometry, a full drawing, hand-checked HAZOP rows, API | Run on every push |
 
 ## Approach
 
@@ -20,6 +43,15 @@ flowchart LR
     C --> E[Guideword rules per<br/>equipment type]
     E --> F[HAZOP draft<br/>causes from topology,<br/>safeguards with tags, gaps]
 ```
+
+| Stage | Where | Technique | Why this one |
+|---|---|---|---|
+| Data | `src/data/` | Synthetic P&IDs drawn as vector PDFs with ISA-5.1 style tags; the true content of each saved as JSON | Real P&IDs can't be published; ground truth lets every read be scored |
+| Features (reading) | `src/features/` | Line widths separate process from signal lines; arrowheads give flow direction; tag grammars find equipment, lines, valves and instruments | Engineering conventions are exact and auditable |
+| HAZOP engine | `src/hazop/` | Guideword rules per equipment type; causes from topology; safeguards with tags; gap notes | A transparent rule set a HAZOP chair can check line by line |
+| Evaluation | `src/models/` | Precision and recall per item type; HAZOP draft from the PDF compared row by row with the draft from the truth | Shows both reading errors and whether they change the HAZOP |
+| Model card | `models/` | Reader settings and a model card (rule-based, no trained weights) | The rules are versioned like a model |
+| Deployment | `src/api/` | FastAPI `/hazop` with file upload | Draft one new drawing without the full pipeline |
 
 **Reading the drawing.** No machine learning is needed for vector drawings. The PDF already holds every text item and every line with exact coordinates, so the reader uses engineering conventions:
 
@@ -56,7 +88,33 @@ Causes are taken from the drawing's topology (for example, *"LV-713 fails closed
 | N04 K-704 (compressor) | Liquid in suction | high level in suction drum V-703 | LSHH-715 (trip on suction drum V-703); LAH-713 | |
 | N04 K-704 (compressor) | Low flow / surge | downstream blocked | none found on drawing | Anti-surge protection not identifiable from this drawing; team to confirm. |
 
-The full draft has 15 rows. One workbook per drawing is in `outputs/hazop/`, with sheets `HAZOP_draft`, `Drawing_register` and `Review_flags`.
+The full draft has 15 rows. One workbook per drawing is in `reports/hazop/`, with sheets `HAZOP_draft`, `Drawing_register` and `Review_flags`.
+
+## Project structure
+
+```
+pid-to-hazop-scenarios/
+├── data/
+│   ├── raw/             30 standard + 20 hard synthetic drawings (PDF + PNG); ground_truth/ for scoring only
+│   ├── processed/       what the reader extracted from every drawing (JSON)
+│   └── sample/          one drawing with its truth, for a quick look
+├── models/              reader settings + model card (rule-based, no trained weights)
+├── notebooks/           01_walkthrough.ipynb: every stage with outputs
+├── reports/             hazop/ (one workbook per drawing), metrics.json, per_drawing_results.csv, figures/
+├── src/
+│   ├── api/             FastAPI service
+│   ├── data/            generate_pids, load_data
+│   ├── features/        pid_reader
+│   ├── hazop/           engine (guideword rules)
+│   ├── models/          evaluate (scoring), rules (model card)
+│   ├── utils/           paths, plots
+│   └── pipeline.py      stages wired together, workbooks
+├── tests/               unit and API tests
+├── .github/workflows/   CI: tests + full pipeline on every push
+├── requirements.txt
+├── README.md
+└── main.py              runs every stage
+```
 
 ## How it was validated
 
@@ -70,7 +128,7 @@ The drawings are synthetic, and the generator saves the true content of each one
 
 Building the hard set exposed two real weaknesses, both now fixed: misses on overlapping bubbles were silent, and title-block words were being taken for instrument letters.
 
-## Results on the sample data
+## Results
 
 | Measure | Standard set (30 drawings) | Hard set (20 drawings) |
 |---|---|---|
@@ -87,42 +145,42 @@ Building the hard set exposed two real weaknesses, both now fixed: misses on ove
 
 **What the numbers do and don't show.** Clean vector drawings that follow consistent conventions can be read exactly. The hard set shows how reading breaks down, mainly on overlapping symbols, and that the reader then errs towards asking the team rather than hiding a gap. These are synthetic drawings in one consistent style. They say nothing yet about real P&IDs from other contractors.
 
-![Hard drawing](docs/annotated_pid_hard.png)
+![Hard drawing](reports/figures/annotated_pid_hard.png)
 
-## Limits
+### Limits
 
 - **Vector PDFs only.** Scanned (raster) P&IDs would need OCR and symbol detection, for example a YOLO-type detector trained on ISA-5.1 symbols. That is not covered here.
 - **One drawing convention.** Real drawing sets vary by contractor (symbol libraries, tag formats, continuation sheets, interlock notes). Each new convention needs its rules extended and re-checked.
 - **One sheet at a time.** Off-sheet connectors are not followed, so a relief valve on another sheet shows as a gap. The gap note says so.
 - **The rules are generic.** Process conditions, design pressures, chemistry and operating modes aren't on a P&ID, and the HAZOP team supplies them.
 
+## What makes it different
+
+- **Every safeguard has a tag.** The draft never says "alarm" without naming which one is on the drawing.
+- **It flags what is missing, not just what is there.** Missing trips, check valves and relief valves become gap notes for the team.
+- **It errs towards asking.** On the hard drawings, every gap call that differed from the truth was an extra question; no real gap was hidden.
+
 ## How to run
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python data/generate_pids.py          # optional: drawings and ground truth are already in data/
-python run.py                         # read all drawings, score, write HAZOP drafts and figures (~5 s)
-pytest                                # unit tests
+python main.py                          # read all drawings, score, write HAZOP drafts and figures (~5 s)
+pytest                                  # unit and API tests
+uvicorn src.api.app:app --reload        # API; open http://127.0.0.1:8000/docs and upload a PDF
 ```
 
-## Repository layout
+`python main.py --regenerate --seed 7` redraws the synthetic drawings first. The notebook `notebooks/01_walkthrough.ipynb` shows every stage with its outputs.
 
-```
-data/generate_pids.py        draws the synthetic P&IDs (PDF + PNG preview) and their ground truth
-data/drawings/               30 standard drawings     data/drawings_hard/  20 hard drawings
-data/ground_truth/           true content of every drawing (used only for scoring)
-src/pid_hazop/reader.py      PDF -> plant model, with review flags
-src/pid_hazop/hazop.py       plant model -> HAZOP draft rows
-src/pid_hazop/score.py       reading accuracy against ground truth
-src/pid_hazop/pipeline.py    runs everything, writes workbooks and metrics
-outputs/hazop/               one HAZOP draft workbook per drawing
-outputs/metrics.json         all scores    outputs/per_drawing_results.csv  per-drawing detail
-```
+## What I learned
+
+- **Make the test data hard on purpose.** The standard set scored 100%, which proved little. The hard set exposed two real bugs: silent misses on overlapping bubbles, and title-block words read as instrument letters.
+- **Judge errors by their effect.** A misread instrument only matters if it changes the HAZOP. Comparing the drafts row by row showed which errors did, and that every changed gap call added a question rather than hiding a gap.
+- **Not everything needs ML.** A vector PDF already holds exact geometry. ML (symbol detection) only becomes necessary for scanned drawings.
 
 ## Data note
 
-**All drawings in this repository are synthetic,** generated by `data/generate_pids.py` and marked "SYNTHETIC P&ID - NOT A REAL PLANT" in their title blocks. Tags, line numbers, units and layouts are invented. No employer drawings, P&IDs, HAZOP records or plant names were used, and no third-party drawings were copied.
+**All drawings in this repository are synthetic,** generated by `src/data/generate_pids.py` and marked "SYNTHETIC P&ID - NOT A REAL PLANT" in their title blocks. Tags, line numbers, units and layouts are invented. No employer drawings, P&IDs, HAZOP records or plant names were used, and no third-party drawings were copied.
 
 This is a public re-implementation of a personal prototype built on sample data. It has not been deployed at any plant. It produces a draft to support a HAZOP team, not a HAZOP study.
 

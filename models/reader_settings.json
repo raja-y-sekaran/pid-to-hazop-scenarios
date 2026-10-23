@@ -1,0 +1,16 @@
+{
+  "process_line_width_min_pt": 1.8,
+  "signal_line_width_max_pt": 0.7,
+  "bubble_diameter_pt": [
+    16,
+    30
+  ],
+  "equipment_tag": "^(T|V|C|P|E|K)-\\d{3}[A-Z]?$",
+  "line_number": "^\\d{1,2}\"-[A-Z]{1,2}-\\d{4}$",
+  "instrument_letters": "^[AFLPTVWSEZ][DFQ]?[IRCTAESYVHLZ]{1,4}$",
+  "attach_order": [
+    "signal line",
+    "same loop",
+    "proximity (flagged for review)"
+  ]
+}

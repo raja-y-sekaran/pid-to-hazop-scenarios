@@ -1,0 +1,2971 @@
+[
+ {
+  "drawing": "SYN-PID-001",
+  "equipment": {
+   "V-101": "drum",
+   "K-102": "compressor",
+   "E-103": "heat exchanger",
+   "V-104": "drum"
+  },
+  "lines": {
+   "3\"-P-1001": {
+    "start": "V-101",
+    "end": "K-102",
+    "valves": [
+     "LV-111"
+    ]
+   },
+   "3\"-P-1002": {
+    "start": "K-102",
+    "end": "E-103",
+    "valves": []
+   },
+   "3\"-P-1003": {
+    "start": "E-103",
+    "end": "V-104",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LT-111": {
+    "attached_to": "V-101",
+    "method": "signal line"
+   },
+   "LIC-111": {
+    "attached_to": "V-101",
+    "method": "signal line"
+   },
+   "LAH-111": {
+    "attached_to": "V-101",
+    "method": "signal line"
+   },
+   "LSHH-112": {
+    "attached_to": "V-101",
+    "method": "signal line"
+   },
+   "PT-113": {
+    "attached_to": "V-101",
+    "method": "signal line"
+   },
+   "PAH-113": {
+    "attached_to": "V-101",
+    "method": "signal line"
+   },
+   "TT-114": {
+    "attached_to": "V-101",
+    "method": "signal line"
+   },
+   "VT-116": {
+    "attached_to": "K-102",
+    "method": "signal line"
+   },
+   "VAH-116": {
+    "attached_to": "K-102",
+    "method": "signal line"
+   },
+   "LT-117": {
+    "attached_to": "V-104",
+    "method": "signal line"
+   },
+   "LIC-117": {
+    "attached_to": "V-104",
+    "method": "signal line"
+   },
+   "LAH-117": {
+    "attached_to": "V-104",
+    "method": "signal line"
+   },
+   "PT-118": {
+    "attached_to": "V-104",
+    "method": "signal line"
+   },
+   "PAH-118": {
+    "attached_to": "V-104",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-115": "V-101",
+   "PSV-119": "V-104"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-002",
+  "equipment": {
+   "T-701": "tank",
+   "P-702A": "pump",
+   "V-703": "drum",
+   "K-704": "compressor",
+   "V-705": "drum"
+  },
+  "lines": {
+   "3\"-P-7001": {
+    "start": "T-701",
+    "end": "P-702A",
+    "valves": [
+     "LV-711"
+    ]
+   },
+   "3\"-P-7002": {
+    "start": "P-702A",
+    "end": "V-703",
+    "valves": [
+     "FV-712"
+    ]
+   },
+   "2\"-P-7003": {
+    "start": "V-703",
+    "end": "K-704",
+    "valves": [
+     "LV-713"
+    ]
+   },
+   "4\"-P-7004": {
+    "start": "K-704",
+    "end": "V-705",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-712": {
+    "attached_to": "3\"-P-7002",
+    "method": "signal line"
+   },
+   "FT-712": {
+    "attached_to": "3\"-P-7002",
+    "method": "signal line"
+   },
+   "FAL-712": {
+    "attached_to": "3\"-P-7002",
+    "method": "signal line"
+   },
+   "LT-711": {
+    "attached_to": "T-701",
+    "method": "signal line"
+   },
+   "LIC-711": {
+    "attached_to": "T-701",
+    "method": "signal line"
+   },
+   "LT-713": {
+    "attached_to": "V-703",
+    "method": "signal line"
+   },
+   "LIC-713": {
+    "attached_to": "V-703",
+    "method": "signal line"
+   },
+   "LAH-713": {
+    "attached_to": "V-703",
+    "method": "signal line"
+   },
+   "VT-715": {
+    "attached_to": "K-704",
+    "method": "signal line"
+   },
+   "VAH-715": {
+    "attached_to": "K-704",
+    "method": "signal line"
+   },
+   "LT-716": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "LIC-716": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "LAH-716": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "LAL-716": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "LSHH-717": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "PT-718": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "PAH-718": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "TT-719": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-714": "V-703",
+   "PSV-720": "V-705"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-003",
+  "equipment": {
+   "V-601": "drum",
+   "P-602A": "pump",
+   "E-603": "heat exchanger",
+   "C-604": "column"
+  },
+  "lines": {
+   "4\"-P-6001": {
+    "start": "V-601",
+    "end": "P-602A",
+    "valves": [
+     "LV-611"
+    ]
+   },
+   "3\"-P-6002": {
+    "start": "P-602A",
+    "end": "E-603",
+    "valves": [
+     "NRV-612"
+    ]
+   },
+   "2\"-P-6003": {
+    "start": "E-603",
+    "end": "C-604",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-613": {
+    "attached_to": "2\"-P-6003",
+    "method": "signal line"
+   },
+   "TAH-613": {
+    "attached_to": "2\"-P-6003",
+    "method": "signal line"
+   },
+   "LT-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LIC-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LAH-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LAL-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LSHH-614": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LT-616": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   },
+   "LIC-616": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   },
+   "LAH-616": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   },
+   "PT-617": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   },
+   "PAH-617": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-618": "C-604",
+   "PSV-615": "V-601"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-004",
+  "equipment": {
+   "V-601": "drum",
+   "P-602A": "pump",
+   "E-603": "heat exchanger",
+   "C-604": "column",
+   "P-605A": "pump",
+   "T-606": "tank"
+  },
+  "lines": {
+   "6\"-P-6001": {
+    "start": "V-601",
+    "end": "P-602A",
+    "valves": [
+     "LV-611"
+    ]
+   },
+   "6\"-P-6002": {
+    "start": "P-602A",
+    "end": "E-603",
+    "valves": [
+     "NRV-612"
+    ]
+   },
+   "8\"-P-6003": {
+    "start": "E-603",
+    "end": "C-604",
+    "valves": []
+   },
+   "3\"-P-6004": {
+    "start": "C-604",
+    "end": "P-605A",
+    "valves": [
+     "LV-614"
+    ]
+   },
+   "2\"-P-6005": {
+    "start": "P-605A",
+    "end": "T-606",
+    "valves": [
+     "FV-616",
+     "NRV-615"
+    ]
+   }
+  },
+  "instruments": {
+   "TT-613": {
+    "attached_to": "8\"-P-6003",
+    "method": "signal line"
+   },
+   "FIC-616": {
+    "attached_to": "2\"-P-6005",
+    "method": "signal line"
+   },
+   "FT-616": {
+    "attached_to": "2\"-P-6005",
+    "method": "signal line"
+   },
+   "LIC-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LAH-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LAL-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LT-614": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   },
+   "LIC-614": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   },
+   "LAL-614": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   },
+   "LSHH-618": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   },
+   "PT-619": {
+    "attached_to": "C-604",
+    "method": "signal line"
+   },
+   "LT-621": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   },
+   "LIC-621": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   },
+   "LAL-621": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   },
+   "TAH-613": {
+    "attached_to": "8\"-P-6003",
+    "method": "same loop"
+   },
+   "LT-611": {
+    "attached_to": "V-601",
+    "method": "same loop"
+   },
+   "LAH-614": {
+    "attached_to": "C-604",
+    "method": "same loop"
+   },
+   "LAH-621": {
+    "attached_to": "T-606",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-620": "C-604",
+   "PSV-617": "V-601"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-005",
+  "equipment": {
+   "T-401": "tank",
+   "P-402A": "pump",
+   "E-403": "heat exchanger",
+   "V-404": "drum"
+  },
+  "lines": {
+   "8\"-P-4001": {
+    "start": "T-401",
+    "end": "P-402A",
+    "valves": [
+     "LV-411"
+    ]
+   },
+   "2\"-P-4002": {
+    "start": "P-402A",
+    "end": "E-403",
+    "valves": [
+     "FV-413",
+     "NRV-412"
+    ]
+   },
+   "8\"-P-4003": {
+    "start": "E-403",
+    "end": "V-404",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-413": {
+    "attached_to": "2\"-P-4002",
+    "method": "signal line"
+   },
+   "FT-413": {
+    "attached_to": "2\"-P-4002",
+    "method": "signal line"
+   },
+   "FAL-413": {
+    "attached_to": "2\"-P-4002",
+    "method": "signal line"
+   },
+   "LT-411": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "LIC-411": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "LAH-411": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "LAL-411": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "PT-414": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "LT-416": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LIC-416": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LAH-416": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LSHH-417": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "PT-418": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-415": "T-401",
+   "PSV-419": "V-404"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-006",
+  "equipment": {
+   "V-201": "drum",
+   "P-202A": "pump",
+   "E-203": "heat exchanger",
+   "C-204": "column"
+  },
+  "lines": {
+   "2\"-P-2001": {
+    "start": "V-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "4\"-P-2002": {
+    "start": "P-202A",
+    "end": "E-203",
+    "valves": [
+     "FV-213",
+     "NRV-212"
+    ]
+   },
+   "2\"-P-2003": {
+    "start": "E-203",
+    "end": "C-204",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-213": {
+    "attached_to": "4\"-P-2002",
+    "method": "signal line"
+   },
+   "FT-213": {
+    "attached_to": "4\"-P-2002",
+    "method": "signal line"
+   },
+   "TT-214": {
+    "attached_to": "2\"-P-2003",
+    "method": "signal line"
+   },
+   "LT-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "LIC-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "LAH-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "PT-215": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "PAH-215": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "LT-217": {
+    "attached_to": "C-204",
+    "method": "signal line"
+   },
+   "LIC-217": {
+    "attached_to": "C-204",
+    "method": "signal line"
+   },
+   "LAH-217": {
+    "attached_to": "C-204",
+    "method": "signal line"
+   },
+   "PT-218": {
+    "attached_to": "C-204",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-219": "C-204",
+   "PSV-216": "V-201"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-007",
+  "equipment": {
+   "T-701": "tank",
+   "P-702A": "pump",
+   "V-703": "drum",
+   "K-704": "compressor",
+   "V-705": "drum"
+  },
+  "lines": {
+   "6\"-P-7001": {
+    "start": "T-701",
+    "end": "P-702A",
+    "valves": [
+     "LV-711"
+    ]
+   },
+   "2\"-P-7002": {
+    "start": "P-702A",
+    "end": "V-703",
+    "valves": [
+     "NRV-712"
+    ]
+   },
+   "2\"-P-7003": {
+    "start": "V-703",
+    "end": "K-704",
+    "valves": [
+     "LV-713"
+    ]
+   },
+   "6\"-P-7004": {
+    "start": "K-704",
+    "end": "V-705",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LIC-711": {
+    "attached_to": "T-701",
+    "method": "signal line"
+   },
+   "LAH-711": {
+    "attached_to": "T-701",
+    "method": "signal line"
+   },
+   "LAH-713": {
+    "attached_to": "V-703",
+    "method": "signal line"
+   },
+   "LAL-713": {
+    "attached_to": "V-703",
+    "method": "signal line"
+   },
+   "LSHH-715": {
+    "attached_to": "V-703",
+    "method": "signal line"
+   },
+   "VT-717": {
+    "attached_to": "K-704",
+    "method": "signal line"
+   },
+   "VAH-717": {
+    "attached_to": "K-704",
+    "method": "signal line"
+   },
+   "LAL-718": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "LSHH-719": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "PT-720": {
+    "attached_to": "V-705",
+    "method": "signal line"
+   },
+   "LT-711": {
+    "attached_to": "T-701",
+    "method": "same loop"
+   },
+   "LAL-711": {
+    "attached_to": "T-701",
+    "method": "same loop"
+   },
+   "PT-714": {
+    "attached_to": "T-701",
+    "method": "proximity"
+   },
+   "LT-713": {
+    "attached_to": "V-703",
+    "method": "same loop"
+   },
+   "LIC-713": {
+    "attached_to": "V-703",
+    "method": "same loop"
+   },
+   "LT-718": {
+    "attached_to": "V-705",
+    "method": "same loop"
+   },
+   "LIC-718": {
+    "attached_to": "V-705",
+    "method": "same loop"
+   },
+   "LAH-718": {
+    "attached_to": "V-705",
+    "method": "same loop"
+   },
+   "PAH-720": {
+    "attached_to": "V-705",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-716": "V-703",
+   "PSV-721": "V-705"
+  },
+  "review_flags": [
+   "instrument PT-714: no signal line, attached to nearest item T-701 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-PID-008",
+  "equipment": {
+   "T-201": "tank",
+   "P-202A": "pump",
+   "C-203": "column"
+  },
+  "lines": {
+   "3\"-P-2001": {
+    "start": "T-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "6\"-P-2002": {
+    "start": "P-202A",
+    "end": "C-203",
+    "valves": [
+     "NRV-212"
+    ]
+   }
+  },
+  "instruments": {
+   "LT-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LIC-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LAH-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "PT-213": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "PAH-213": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LT-214": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "LIC-214": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "LAH-214": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "LSHH-215": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "PT-216": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "PAH-216": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "TT-217": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-218": "C-203"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-009",
+  "equipment": {
+   "T-201": "tank",
+   "P-202A": "pump",
+   "E-203": "heat exchanger",
+   "V-204": "drum"
+  },
+  "lines": {
+   "8\"-P-2001": {
+    "start": "T-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "8\"-P-2002": {
+    "start": "P-202A",
+    "end": "E-203",
+    "valves": [
+     "FV-212"
+    ]
+   },
+   "4\"-P-2003": {
+    "start": "E-203",
+    "end": "V-204",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-212": {
+    "attached_to": "8\"-P-2002",
+    "method": "signal line"
+   },
+   "FT-212": {
+    "attached_to": "8\"-P-2002",
+    "method": "signal line"
+   },
+   "FAL-212": {
+    "attached_to": "8\"-P-2002",
+    "method": "signal line"
+   },
+   "TT-213": {
+    "attached_to": "4\"-P-2003",
+    "method": "signal line"
+   },
+   "TAH-213": {
+    "attached_to": "4\"-P-2003",
+    "method": "signal line"
+   },
+   "LT-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LIC-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LAH-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LAL-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LSHH-214": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "PT-215": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "PAH-215": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LT-216": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LIC-216": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "PT-217": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "TT-218": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {},
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-010",
+  "equipment": {
+   "V-201": "drum",
+   "K-202": "compressor",
+   "E-203": "heat exchanger",
+   "V-204": "drum"
+  },
+  "lines": {
+   "3\"-P-2001": {
+    "start": "V-201",
+    "end": "K-202",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "4\"-P-2002": {
+    "start": "K-202",
+    "end": "E-203",
+    "valves": []
+   },
+   "4\"-P-2003": {
+    "start": "E-203",
+    "end": "V-204",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-212": {
+    "attached_to": "4\"-P-2003",
+    "method": "signal line"
+   },
+   "TAH-212": {
+    "attached_to": "4\"-P-2003",
+    "method": "signal line"
+   },
+   "LT-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "LIC-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "LAL-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "PT-214": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "TT-215": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "VT-217": {
+    "attached_to": "K-202",
+    "method": "signal line"
+   },
+   "VAH-217": {
+    "attached_to": "K-202",
+    "method": "signal line"
+   },
+   "LIC-218": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LAH-218": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LAL-218": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LSHH-219": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LSHH-213": {
+    "attached_to": "V-201",
+    "method": "proximity"
+   },
+   "LT-218": {
+    "attached_to": "V-204",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-216": "V-201",
+   "PSV-220": "V-204"
+  },
+  "review_flags": [
+   "instrument LSHH-213: no signal line, attached to nearest item V-201 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-PID-011",
+  "equipment": {
+   "V-301": "drum",
+   "P-302A": "pump",
+   "E-303": "heat exchanger",
+   "C-304": "column"
+  },
+  "lines": {
+   "3\"-P-3001": {
+    "start": "V-301",
+    "end": "P-302A",
+    "valves": [
+     "LV-311"
+    ]
+   },
+   "6\"-P-3002": {
+    "start": "P-302A",
+    "end": "E-303",
+    "valves": [
+     "NRV-312"
+    ]
+   },
+   "4\"-P-3003": {
+    "start": "E-303",
+    "end": "C-304",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LT-311": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "LIC-311": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "LAH-311": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "PT-313": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "PAH-313": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "LT-315": {
+    "attached_to": "C-304",
+    "method": "signal line"
+   },
+   "LIC-315": {
+    "attached_to": "C-304",
+    "method": "signal line"
+   },
+   "LAH-315": {
+    "attached_to": "C-304",
+    "method": "signal line"
+   },
+   "LAL-315": {
+    "attached_to": "C-304",
+    "method": "signal line"
+   },
+   "LSHH-316": {
+    "attached_to": "C-304",
+    "method": "signal line"
+   },
+   "PT-317": {
+    "attached_to": "C-304",
+    "method": "signal line"
+   },
+   "PAH-317": {
+    "attached_to": "C-304",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-314": "V-301"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-012",
+  "equipment": {
+   "V-401": "drum",
+   "P-402A": "pump",
+   "E-403": "heat exchanger",
+   "V-404": "drum"
+  },
+  "lines": {
+   "4\"-P-4001": {
+    "start": "V-401",
+    "end": "P-402A",
+    "valves": [
+     "LV-411"
+    ]
+   },
+   "4\"-P-4002": {
+    "start": "P-402A",
+    "end": "E-403",
+    "valves": [
+     "NRV-412"
+    ]
+   },
+   "8\"-P-4003": {
+    "start": "E-403",
+    "end": "V-404",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-413": {
+    "attached_to": "8\"-P-4003",
+    "method": "signal line"
+   },
+   "TAH-413": {
+    "attached_to": "8\"-P-4003",
+    "method": "signal line"
+   },
+   "LT-411": {
+    "attached_to": "V-401",
+    "method": "signal line"
+   },
+   "LAL-411": {
+    "attached_to": "V-401",
+    "method": "signal line"
+   },
+   "LT-416": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LAH-416": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LIC-411": {
+    "attached_to": "V-401",
+    "method": "same loop"
+   },
+   "PT-414": {
+    "attached_to": "V-401",
+    "method": "proximity"
+   },
+   "LIC-416": {
+    "attached_to": "V-404",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-415": "V-401"
+  },
+  "review_flags": [
+   "instrument PT-414: no signal line, attached to nearest item V-401 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-PID-013",
+  "equipment": {
+   "V-601": "drum",
+   "K-602": "compressor",
+   "E-603": "heat exchanger",
+   "V-604": "drum"
+  },
+  "lines": {
+   "4\"-P-6001": {
+    "start": "V-601",
+    "end": "K-602",
+    "valves": [
+     "LV-611"
+    ]
+   },
+   "8\"-P-6002": {
+    "start": "K-602",
+    "end": "E-603",
+    "valves": []
+   },
+   "4\"-P-6003": {
+    "start": "E-603",
+    "end": "V-604",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-612": {
+    "attached_to": "4\"-P-6003",
+    "method": "signal line"
+   },
+   "TAH-612": {
+    "attached_to": "4\"-P-6003",
+    "method": "signal line"
+   },
+   "LT-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LIC-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LAH-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LSHH-613": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "VT-615": {
+    "attached_to": "K-602",
+    "method": "signal line"
+   },
+   "VAH-615": {
+    "attached_to": "K-602",
+    "method": "signal line"
+   },
+   "LT-616": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "LIC-616": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "LAH-616": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "LAL-616": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "PT-617": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "PAH-617": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-614": "V-601",
+   "PSV-618": "V-604"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-014",
+  "equipment": {
+   "V-801": "drum",
+   "P-802A": "pump",
+   "E-803": "heat exchanger",
+   "V-804": "drum",
+   "P-805A": "pump",
+   "T-806": "tank"
+  },
+  "lines": {
+   "3\"-P-8001": {
+    "start": "V-801",
+    "end": "P-802A",
+    "valves": [
+     "LV-811"
+    ]
+   },
+   "3\"-P-8002": {
+    "start": "P-802A",
+    "end": "E-803",
+    "valves": [
+     "NRV-812"
+    ]
+   },
+   "8\"-P-8003": {
+    "start": "E-803",
+    "end": "V-804",
+    "valves": []
+   },
+   "3\"-P-8004": {
+    "start": "V-804",
+    "end": "P-805A",
+    "valves": [
+     "LV-813"
+    ]
+   },
+   "3\"-P-8005": {
+    "start": "P-805A",
+    "end": "T-806",
+    "valves": [
+     "NRV-814"
+    ]
+   }
+  },
+  "instruments": {
+   "LT-811": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LIC-811": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LAH-811": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LT-813": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "LIC-813": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "TT-817": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "LIC-819": {
+    "attached_to": "T-806",
+    "method": "signal line"
+   },
+   "LAL-819": {
+    "attached_to": "T-806",
+    "method": "signal line"
+   },
+   "LSHH-820": {
+    "attached_to": "T-806",
+    "method": "signal line"
+   },
+   "PT-821": {
+    "attached_to": "T-806",
+    "method": "signal line"
+   },
+   "PAH-821": {
+    "attached_to": "T-806",
+    "method": "signal line"
+   },
+   "LSHH-815": {
+    "attached_to": "V-801",
+    "method": "proximity"
+   },
+   "LT-819": {
+    "attached_to": "T-806",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-816": "V-801",
+   "PSV-818": "V-804"
+  },
+  "review_flags": [
+   "instrument LSHH-815: no signal line, attached to nearest item V-801 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-PID-015",
+  "equipment": {
+   "V-301": "drum",
+   "K-302": "compressor",
+   "E-303": "heat exchanger",
+   "V-304": "drum"
+  },
+  "lines": {
+   "6\"-P-3001": {
+    "start": "V-301",
+    "end": "K-302",
+    "valves": [
+     "LV-311"
+    ]
+   },
+   "4\"-P-3002": {
+    "start": "K-302",
+    "end": "E-303",
+    "valves": []
+   },
+   "3\"-P-3003": {
+    "start": "E-303",
+    "end": "V-304",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LT-311": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "LIC-311": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "LAH-311": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "LSHH-312": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "PT-313": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "PAH-313": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "VT-315": {
+    "attached_to": "K-302",
+    "method": "signal line"
+   },
+   "VAH-315": {
+    "attached_to": "K-302",
+    "method": "signal line"
+   },
+   "LT-316": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   },
+   "LIC-316": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   },
+   "LAL-316": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   },
+   "LSHH-317": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   },
+   "PT-318": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   },
+   "PAH-318": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   },
+   "TT-319": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-314": "V-301",
+   "PSV-320": "V-304"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-016",
+  "equipment": {
+   "V-801": "drum",
+   "P-802A": "pump",
+   "E-803": "heat exchanger",
+   "V-804": "drum"
+  },
+  "lines": {
+   "3\"-P-8001": {
+    "start": "V-801",
+    "end": "P-802A",
+    "valves": [
+     "LV-811"
+    ]
+   },
+   "8\"-P-8002": {
+    "start": "P-802A",
+    "end": "E-803",
+    "valves": [
+     "NRV-812"
+    ]
+   },
+   "8\"-P-8003": {
+    "start": "E-803",
+    "end": "V-804",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-813": {
+    "attached_to": "8\"-P-8003",
+    "method": "signal line"
+   },
+   "LT-811": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LIC-816": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "LAL-816": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "PT-817": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "LIC-811": {
+    "attached_to": "V-801",
+    "method": "same loop"
+   },
+   "LSHH-814": {
+    "attached_to": "V-801",
+    "method": "proximity"
+   },
+   "LT-816": {
+    "attached_to": "V-804",
+    "method": "same loop"
+   },
+   "LAH-816": {
+    "attached_to": "V-804",
+    "method": "same loop"
+   },
+   "PAH-817": {
+    "attached_to": "V-804",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-815": "V-801",
+   "PSV-818": "V-804"
+  },
+  "review_flags": [
+   "instrument LSHH-814: no signal line, attached to nearest item V-801 (36 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-PID-017",
+  "equipment": {
+   "V-801": "drum",
+   "P-802A": "pump",
+   "E-803": "heat exchanger",
+   "C-804": "column"
+  },
+  "lines": {
+   "4\"-P-8001": {
+    "start": "V-801",
+    "end": "P-802A",
+    "valves": [
+     "LV-811"
+    ]
+   },
+   "4\"-P-8002": {
+    "start": "P-802A",
+    "end": "E-803",
+    "valves": [
+     "FV-812"
+    ]
+   },
+   "2\"-P-8003": {
+    "start": "E-803",
+    "end": "C-804",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-812": {
+    "attached_to": "4\"-P-8002",
+    "method": "signal line"
+   },
+   "FT-812": {
+    "attached_to": "4\"-P-8002",
+    "method": "signal line"
+   },
+   "FAL-812": {
+    "attached_to": "4\"-P-8002",
+    "method": "signal line"
+   },
+   "TT-813": {
+    "attached_to": "2\"-P-8003",
+    "method": "signal line"
+   },
+   "LIC-811": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LAH-811": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "PAH-814": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "TT-815": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LAH-817": {
+    "attached_to": "C-804",
+    "method": "signal line"
+   },
+   "LSHH-818": {
+    "attached_to": "C-804",
+    "method": "signal line"
+   },
+   "PT-819": {
+    "attached_to": "C-804",
+    "method": "signal line"
+   },
+   "TT-820": {
+    "attached_to": "C-804",
+    "method": "signal line"
+   },
+   "LT-811": {
+    "attached_to": "V-801",
+    "method": "same loop"
+   },
+   "PT-814": {
+    "attached_to": "V-801",
+    "method": "same loop"
+   },
+   "LT-817": {
+    "attached_to": "C-804",
+    "method": "same loop"
+   },
+   "LIC-817": {
+    "attached_to": "C-804",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-821": "C-804",
+   "PSV-816": "V-801"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-018",
+  "equipment": {
+   "T-401": "tank",
+   "P-402A": "pump",
+   "E-403": "heat exchanger",
+   "V-404": "drum",
+   "P-405A": "pump",
+   "T-406": "tank"
+  },
+  "lines": {
+   "4\"-P-4001": {
+    "start": "T-401",
+    "end": "P-402A",
+    "valves": [
+     "LV-411"
+    ]
+   },
+   "8\"-P-4002": {
+    "start": "P-402A",
+    "end": "E-403",
+    "valves": []
+   },
+   "8\"-P-4003": {
+    "start": "E-403",
+    "end": "V-404",
+    "valves": []
+   },
+   "4\"-P-4004": {
+    "start": "V-404",
+    "end": "P-405A",
+    "valves": [
+     "LV-412"
+    ]
+   },
+   "8\"-P-4005": {
+    "start": "P-405A",
+    "end": "T-406",
+    "valves": [
+     "FV-414",
+     "NRV-413"
+    ]
+   }
+  },
+  "instruments": {
+   "FIC-414": {
+    "attached_to": "8\"-P-4005",
+    "method": "signal line"
+   },
+   "FT-414": {
+    "attached_to": "8\"-P-4005",
+    "method": "signal line"
+   },
+   "LT-411": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "LIC-411": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "LAH-411": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "PT-415": {
+    "attached_to": "T-401",
+    "method": "signal line"
+   },
+   "LT-412": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LIC-412": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LAH-412": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LAL-412": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "TT-416": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LT-417": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "LIC-417": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "LAH-417": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "LAL-417": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "LSHH-418": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "TT-419": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {},
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-019",
+  "equipment": {
+   "T-201": "tank",
+   "P-202A": "pump",
+   "V-203": "drum",
+   "K-204": "compressor",
+   "V-205": "drum"
+  },
+  "lines": {
+   "3\"-P-2001": {
+    "start": "T-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "6\"-P-2002": {
+    "start": "P-202A",
+    "end": "V-203",
+    "valves": [
+     "NRV-212"
+    ]
+   },
+   "4\"-P-2003": {
+    "start": "V-203",
+    "end": "K-204",
+    "valves": [
+     "LV-213"
+    ]
+   },
+   "2\"-P-2004": {
+    "start": "K-204",
+    "end": "V-205",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "LT-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LIC-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LAH-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LAL-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LSHH-214": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "PT-215": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "PAH-215": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "TT-216": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LT-213": {
+    "attached_to": "V-203",
+    "method": "signal line"
+   },
+   "LIC-213": {
+    "attached_to": "V-203",
+    "method": "signal line"
+   },
+   "PT-218": {
+    "attached_to": "V-203",
+    "method": "signal line"
+   },
+   "PAH-218": {
+    "attached_to": "V-203",
+    "method": "signal line"
+   },
+   "VT-220": {
+    "attached_to": "K-204",
+    "method": "signal line"
+   },
+   "VAH-220": {
+    "attached_to": "K-204",
+    "method": "signal line"
+   },
+   "LT-221": {
+    "attached_to": "V-205",
+    "method": "signal line"
+   },
+   "LIC-221": {
+    "attached_to": "V-205",
+    "method": "signal line"
+   },
+   "LAH-221": {
+    "attached_to": "V-205",
+    "method": "signal line"
+   },
+   "LSHH-222": {
+    "attached_to": "V-205",
+    "method": "signal line"
+   },
+   "PT-223": {
+    "attached_to": "V-205",
+    "method": "signal line"
+   },
+   "PAH-223": {
+    "attached_to": "V-205",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-217": "T-201",
+   "PSV-219": "V-203",
+   "PSV-224": "V-205"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-020",
+  "equipment": {
+   "V-601": "drum",
+   "P-602A": "pump",
+   "E-603": "heat exchanger",
+   "V-604": "drum",
+   "P-605A": "pump",
+   "T-606": "tank"
+  },
+  "lines": {
+   "8\"-P-6001": {
+    "start": "V-601",
+    "end": "P-602A",
+    "valves": [
+     "LV-611"
+    ]
+   },
+   "4\"-P-6002": {
+    "start": "P-602A",
+    "end": "E-603",
+    "valves": [
+     "NRV-612"
+    ]
+   },
+   "4\"-P-6003": {
+    "start": "E-603",
+    "end": "V-604",
+    "valves": []
+   },
+   "4\"-P-6004": {
+    "start": "V-604",
+    "end": "P-605A",
+    "valves": [
+     "LV-614"
+    ]
+   },
+   "4\"-P-6005": {
+    "start": "P-605A",
+    "end": "T-606",
+    "valves": [
+     "NRV-615"
+    ]
+   }
+  },
+  "instruments": {
+   "TT-613": {
+    "attached_to": "4\"-P-6003",
+    "method": "signal line"
+   },
+   "TAH-613": {
+    "attached_to": "4\"-P-6003",
+    "method": "signal line"
+   },
+   "LT-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LIC-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LAH-611": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "TT-616": {
+    "attached_to": "V-601",
+    "method": "signal line"
+   },
+   "LT-614": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "LIC-614": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "LAH-614": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "PT-618": {
+    "attached_to": "V-604",
+    "method": "signal line"
+   },
+   "LT-620": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   },
+   "LIC-620": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   },
+   "LAH-620": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   },
+   "LAL-620": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   },
+   "PT-621": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   },
+   "PAH-621": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   },
+   "TT-622": {
+    "attached_to": "T-606",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-617": "V-601",
+   "PSV-619": "V-604",
+   "PSV-623": "T-606"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-021",
+  "equipment": {
+   "T-801": "tank",
+   "P-802A": "pump",
+   "E-803": "heat exchanger",
+   "V-804": "drum"
+  },
+  "lines": {
+   "8\"-P-8001": {
+    "start": "T-801",
+    "end": "P-802A",
+    "valves": [
+     "LV-811"
+    ]
+   },
+   "4\"-P-8002": {
+    "start": "P-802A",
+    "end": "E-803",
+    "valves": [
+     "FV-813",
+     "NRV-812"
+    ]
+   },
+   "2\"-P-8003": {
+    "start": "E-803",
+    "end": "V-804",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-813": {
+    "attached_to": "4\"-P-8002",
+    "method": "signal line"
+   },
+   "FT-813": {
+    "attached_to": "4\"-P-8002",
+    "method": "signal line"
+   },
+   "FAL-813": {
+    "attached_to": "4\"-P-8002",
+    "method": "signal line"
+   },
+   "TT-814": {
+    "attached_to": "2\"-P-8003",
+    "method": "signal line"
+   },
+   "LT-811": {
+    "attached_to": "T-801",
+    "method": "signal line"
+   },
+   "LIC-811": {
+    "attached_to": "T-801",
+    "method": "signal line"
+   },
+   "LAH-811": {
+    "attached_to": "T-801",
+    "method": "signal line"
+   },
+   "LAL-811": {
+    "attached_to": "T-801",
+    "method": "signal line"
+   },
+   "LSHH-815": {
+    "attached_to": "T-801",
+    "method": "signal line"
+   },
+   "PT-816": {
+    "attached_to": "T-801",
+    "method": "signal line"
+   },
+   "PAH-816": {
+    "attached_to": "T-801",
+    "method": "signal line"
+   },
+   "TT-817": {
+    "attached_to": "T-801",
+    "method": "signal line"
+   },
+   "LT-818": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "LIC-818": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "LAL-818": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "LSHH-819": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "PT-820": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   },
+   "PAH-820": {
+    "attached_to": "V-804",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-821": "V-804"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-022",
+  "equipment": {
+   "V-701": "drum",
+   "P-702A": "pump",
+   "E-703": "heat exchanger",
+   "V-704": "drum"
+  },
+  "lines": {
+   "4\"-P-7001": {
+    "start": "V-701",
+    "end": "P-702A",
+    "valves": [
+     "LV-711"
+    ]
+   },
+   "8\"-P-7002": {
+    "start": "P-702A",
+    "end": "E-703",
+    "valves": [
+     "FV-712"
+    ]
+   },
+   "8\"-P-7003": {
+    "start": "E-703",
+    "end": "V-704",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-712": {
+    "attached_to": "8\"-P-7002",
+    "method": "signal line"
+   },
+   "FT-712": {
+    "attached_to": "8\"-P-7002",
+    "method": "signal line"
+   },
+   "LT-711": {
+    "attached_to": "V-701",
+    "method": "signal line"
+   },
+   "LIC-711": {
+    "attached_to": "V-701",
+    "method": "signal line"
+   },
+   "LAH-711": {
+    "attached_to": "V-701",
+    "method": "signal line"
+   },
+   "PT-713": {
+    "attached_to": "V-701",
+    "method": "signal line"
+   },
+   "PAH-713": {
+    "attached_to": "V-701",
+    "method": "signal line"
+   },
+   "TT-714": {
+    "attached_to": "V-701",
+    "method": "signal line"
+   },
+   "LT-716": {
+    "attached_to": "V-704",
+    "method": "signal line"
+   },
+   "LIC-716": {
+    "attached_to": "V-704",
+    "method": "signal line"
+   },
+   "LAH-716": {
+    "attached_to": "V-704",
+    "method": "signal line"
+   },
+   "LAL-716": {
+    "attached_to": "V-704",
+    "method": "signal line"
+   },
+   "PT-717": {
+    "attached_to": "V-704",
+    "method": "signal line"
+   },
+   "PAH-717": {
+    "attached_to": "V-704",
+    "method": "signal line"
+   },
+   "TT-718": {
+    "attached_to": "V-704",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-715": "V-701",
+   "PSV-719": "V-704"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-023",
+  "equipment": {
+   "V-201": "drum",
+   "K-202": "compressor",
+   "E-203": "heat exchanger",
+   "V-204": "drum"
+  },
+  "lines": {
+   "4\"-P-2001": {
+    "start": "V-201",
+    "end": "K-202",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "8\"-P-2002": {
+    "start": "K-202",
+    "end": "E-203",
+    "valves": []
+   },
+   "3\"-P-2003": {
+    "start": "E-203",
+    "end": "V-204",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-212": {
+    "attached_to": "3\"-P-2003",
+    "method": "signal line"
+   },
+   "TAH-212": {
+    "attached_to": "3\"-P-2003",
+    "method": "signal line"
+   },
+   "LT-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "LIC-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "LAH-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "PT-213": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "PAH-213": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "VT-215": {
+    "attached_to": "K-202",
+    "method": "signal line"
+   },
+   "VAH-215": {
+    "attached_to": "K-202",
+    "method": "signal line"
+   },
+   "LT-216": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LIC-216": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LAH-216": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LAL-216": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-214": "V-201",
+   "PSV-217": "V-204"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-024",
+  "equipment": {
+   "T-201": "tank",
+   "P-202A": "pump",
+   "C-203": "column"
+  },
+  "lines": {
+   "6\"-P-2001": {
+    "start": "T-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "4\"-P-2002": {
+    "start": "P-202A",
+    "end": "C-203",
+    "valves": [
+     "FV-213",
+     "NRV-212"
+    ]
+   }
+  },
+  "instruments": {
+   "FIC-213": {
+    "attached_to": "4\"-P-2002",
+    "method": "signal line"
+   },
+   "FT-213": {
+    "attached_to": "4\"-P-2002",
+    "method": "signal line"
+   },
+   "FAL-213": {
+    "attached_to": "4\"-P-2002",
+    "method": "signal line"
+   },
+   "LT-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LIC-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LAH-211": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "PT-214": {
+    "attached_to": "T-201",
+    "method": "signal line"
+   },
+   "LT-216": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "LIC-216": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "LAH-216": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "LAL-216": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "PT-217": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   },
+   "PAH-217": {
+    "attached_to": "C-203",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-218": "C-203",
+   "PSV-215": "T-201"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-025",
+  "equipment": {
+   "V-201": "drum",
+   "P-202A": "pump",
+   "E-203": "heat exchanger",
+   "V-204": "drum"
+  },
+  "lines": {
+   "6\"-P-2001": {
+    "start": "V-201",
+    "end": "P-202A",
+    "valves": [
+     "LV-211"
+    ]
+   },
+   "4\"-P-2002": {
+    "start": "P-202A",
+    "end": "E-203",
+    "valves": [
+     "FV-213",
+     "NRV-212"
+    ]
+   },
+   "6\"-P-2003": {
+    "start": "E-203",
+    "end": "V-204",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-213": {
+    "attached_to": "4\"-P-2002",
+    "method": "signal line"
+   },
+   "FT-213": {
+    "attached_to": "4\"-P-2002",
+    "method": "signal line"
+   },
+   "FAL-213": {
+    "attached_to": "4\"-P-2002",
+    "method": "signal line"
+   },
+   "TT-214": {
+    "attached_to": "6\"-P-2003",
+    "method": "signal line"
+   },
+   "TAH-214": {
+    "attached_to": "6\"-P-2003",
+    "method": "signal line"
+   },
+   "LT-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "LIC-211": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "PT-215": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "PAH-215": {
+    "attached_to": "V-201",
+    "method": "signal line"
+   },
+   "LT-216": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LIC-216": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   },
+   "LAH-216": {
+    "attached_to": "V-204",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-217": "V-204"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-026",
+  "equipment": {
+   "T-601": "tank",
+   "P-602A": "pump",
+   "C-603": "column",
+   "P-604A": "pump",
+   "E-605": "heat exchanger"
+  },
+  "lines": {
+   "6\"-P-6001": {
+    "start": "T-601",
+    "end": "P-602A",
+    "valves": [
+     "LV-611"
+    ]
+   },
+   "8\"-P-6002": {
+    "start": "P-602A",
+    "end": "C-603",
+    "valves": [
+     "NRV-612"
+    ]
+   },
+   "6\"-P-6003": {
+    "start": "C-603",
+    "end": "P-604A",
+    "valves": [
+     "LV-613"
+    ]
+   },
+   "8\"-P-6004": {
+    "start": "P-604A",
+    "end": "E-605",
+    "valves": [
+     "FV-615",
+     "NRV-614"
+    ]
+   }
+  },
+  "instruments": {
+   "FIC-615": {
+    "attached_to": "8\"-P-6004",
+    "method": "signal line"
+   },
+   "LT-611": {
+    "attached_to": "T-601",
+    "method": "signal line"
+   },
+   "LIC-611": {
+    "attached_to": "T-601",
+    "method": "signal line"
+   },
+   "LAH-611": {
+    "attached_to": "T-601",
+    "method": "signal line"
+   },
+   "PT-616": {
+    "attached_to": "T-601",
+    "method": "signal line"
+   },
+   "TT-617": {
+    "attached_to": "T-601",
+    "method": "signal line"
+   },
+   "LT-613": {
+    "attached_to": "C-603",
+    "method": "signal line"
+   },
+   "LAH-613": {
+    "attached_to": "C-603",
+    "method": "signal line"
+   },
+   "FT-615": {
+    "attached_to": "8\"-P-6004",
+    "method": "same loop"
+   },
+   "LIC-613": {
+    "attached_to": "C-603",
+    "method": "same loop"
+   },
+   "PT-619": {
+    "attached_to": "C-603",
+    "method": "proximity"
+   },
+   "PAH-619": {
+    "attached_to": "C-603",
+    "method": "proximity"
+   }
+  },
+  "relief_valves": {
+   "PSV-620": "C-603",
+   "PSV-618": "T-601"
+  },
+  "review_flags": [
+   "instrument PT-619: no signal line, attached to nearest item C-603 (66 pt)",
+   "instrument PAH-619: no signal line, attached to nearest item C-603 (65 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-PID-027",
+  "equipment": {
+   "V-801": "drum",
+   "P-802A": "pump",
+   "E-803": "heat exchanger",
+   "C-804": "column"
+  },
+  "lines": {
+   "8\"-P-8001": {
+    "start": "V-801",
+    "end": "P-802A",
+    "valves": [
+     "LV-811"
+    ]
+   },
+   "6\"-P-8002": {
+    "start": "P-802A",
+    "end": "E-803",
+    "valves": [
+     "FV-813",
+     "NRV-812"
+    ]
+   },
+   "6\"-P-8003": {
+    "start": "E-803",
+    "end": "C-804",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-813": {
+    "attached_to": "6\"-P-8002",
+    "method": "signal line"
+   },
+   "FT-813": {
+    "attached_to": "6\"-P-8002",
+    "method": "signal line"
+   },
+   "LT-811": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LIC-811": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LSHH-814": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "PT-815": {
+    "attached_to": "V-801",
+    "method": "signal line"
+   },
+   "LT-817": {
+    "attached_to": "C-804",
+    "method": "signal line"
+   },
+   "LIC-817": {
+    "attached_to": "C-804",
+    "method": "signal line"
+   },
+   "LAH-817": {
+    "attached_to": "C-804",
+    "method": "signal line"
+   },
+   "LSHH-818": {
+    "attached_to": "C-804",
+    "method": "signal line"
+   },
+   "PT-819": {
+    "attached_to": "C-804",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-820": "C-804",
+   "PSV-816": "V-801"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-028",
+  "equipment": {
+   "T-301": "tank",
+   "P-302A": "pump",
+   "C-303": "column",
+   "P-304A": "pump",
+   "E-305": "heat exchanger",
+   "T-306": "tank"
+  },
+  "lines": {
+   "4\"-P-3001": {
+    "start": "T-301",
+    "end": "P-302A",
+    "valves": [
+     "LV-311"
+    ]
+   },
+   "2\"-P-3002": {
+    "start": "P-302A",
+    "end": "C-303",
+    "valves": [
+     "FV-312"
+    ]
+   },
+   "6\"-P-3003": {
+    "start": "C-303",
+    "end": "P-304A",
+    "valves": [
+     "LV-313"
+    ]
+   },
+   "2\"-P-3004": {
+    "start": "P-304A",
+    "end": "E-305",
+    "valves": [
+     "FV-315",
+     "NRV-314"
+    ]
+   },
+   "3\"-P-3005": {
+    "start": "E-305",
+    "end": "T-306",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "FIC-312": {
+    "attached_to": "2\"-P-3002",
+    "method": "signal line"
+   },
+   "FT-312": {
+    "attached_to": "2\"-P-3002",
+    "method": "signal line"
+   },
+   "FIC-315": {
+    "attached_to": "2\"-P-3004",
+    "method": "signal line"
+   },
+   "FT-315": {
+    "attached_to": "2\"-P-3004",
+    "method": "signal line"
+   },
+   "TT-316": {
+    "attached_to": "3\"-P-3005",
+    "method": "signal line"
+   },
+   "LT-311": {
+    "attached_to": "T-301",
+    "method": "signal line"
+   },
+   "LIC-311": {
+    "attached_to": "T-301",
+    "method": "signal line"
+   },
+   "LAH-311": {
+    "attached_to": "T-301",
+    "method": "signal line"
+   },
+   "LSHH-317": {
+    "attached_to": "T-301",
+    "method": "signal line"
+   },
+   "PT-318": {
+    "attached_to": "T-301",
+    "method": "signal line"
+   },
+   "PAH-318": {
+    "attached_to": "T-301",
+    "method": "signal line"
+   },
+   "LT-313": {
+    "attached_to": "C-303",
+    "method": "signal line"
+   },
+   "LIC-313": {
+    "attached_to": "C-303",
+    "method": "signal line"
+   },
+   "PT-320": {
+    "attached_to": "C-303",
+    "method": "signal line"
+   },
+   "PAH-320": {
+    "attached_to": "C-303",
+    "method": "signal line"
+   },
+   "LT-322": {
+    "attached_to": "T-306",
+    "method": "signal line"
+   },
+   "LIC-322": {
+    "attached_to": "T-306",
+    "method": "signal line"
+   },
+   "LAH-322": {
+    "attached_to": "T-306",
+    "method": "signal line"
+   },
+   "LAL-322": {
+    "attached_to": "T-306",
+    "method": "signal line"
+   },
+   "LSHH-323": {
+    "attached_to": "T-306",
+    "method": "signal line"
+   },
+   "PT-324": {
+    "attached_to": "T-306",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {
+   "PSV-321": "C-303",
+   "PSV-319": "T-301",
+   "PSV-325": "T-306"
+  },
+  "review_flags": []
+ },
+ {
+  "drawing": "SYN-PID-029",
+  "equipment": {
+   "V-301": "drum",
+   "K-302": "compressor",
+   "E-303": "heat exchanger",
+   "V-304": "drum"
+  },
+  "lines": {
+   "2\"-P-3001": {
+    "start": "V-301",
+    "end": "K-302",
+    "valves": [
+     "LV-311"
+    ]
+   },
+   "4\"-P-3002": {
+    "start": "K-302",
+    "end": "E-303",
+    "valves": []
+   },
+   "6\"-P-3003": {
+    "start": "E-303",
+    "end": "V-304",
+    "valves": []
+   }
+  },
+  "instruments": {
+   "TT-312": {
+    "attached_to": "6\"-P-3003",
+    "method": "signal line"
+   },
+   "LT-311": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "LAH-311": {
+    "attached_to": "V-301",
+    "method": "signal line"
+   },
+   "LT-315": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   },
+   "LIC-315": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   },
+   "PT-317": {
+    "attached_to": "V-304",
+    "method": "signal line"
+   },
+   "LIC-311": {
+    "attached_to": "V-301",
+    "method": "same loop"
+   },
+   "LAL-311": {
+    "attached_to": "V-301",
+    "method": "same loop"
+   },
+   "TT-313": {
+    "attached_to": "V-301",
+    "method": "proximity"
+   },
+   "LSHH-316": {
+    "attached_to": "V-304",
+    "method": "proximity"
+   },
+   "PAH-317": {
+    "attached_to": "V-304",
+    "method": "same loop"
+   }
+  },
+  "relief_valves": {
+   "PSV-314": "V-301",
+   "PSV-318": "V-304"
+  },
+  "review_flags": [
+   "instrument TT-313: no signal line, attached to nearest item V-301 (65 pt)",
+   "instrument LSHH-316: no signal line, attached to nearest item V-304 (36 pt)"
+  ]
+ },
+ {
+  "drawing": "SYN-PID-030",
+  "equipment": {
+   "V-401": "drum",
+   "P-402A": "pump",
+   "E-403": "heat exchanger",
+   "V-404": "drum",
+   "P-405A": "pump",
+   "T-406": "tank"
+  },
+  "lines": {
+   "4\"-P-4001": {
+    "start": "V-401",
+    "end": "P-402A",
+    "valves": [
+     "LV-411"
+    ]
+   },
+   "8\"-P-4002": {
+    "start": "P-402A",
+    "end": "E-403",
+    "valves": [
+     "NRV-412"
+    ]
+   },
+   "2\"-P-4003": {
+    "start": "E-403",
+    "end": "V-404",
+    "valves": []
+   },
+   "6\"-P-4004": {
+    "start": "V-404",
+    "end": "P-405A",
+    "valves": [
+     "LV-413"
+    ]
+   },
+   "4\"-P-4005": {
+    "start": "P-405A",
+    "end": "T-406",
+    "valves": [
+     "NRV-414"
+    ]
+   }
+  },
+  "instruments": {
+   "LT-411": {
+    "attached_to": "V-401",
+    "method": "signal line"
+   },
+   "LIC-411": {
+    "attached_to": "V-401",
+    "method": "signal line"
+   },
+   "LAH-411": {
+    "attached_to": "V-401",
+    "method": "signal line"
+   },
+   "LT-413": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LIC-413": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LAH-413": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LAL-413": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "PT-415": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "PAH-415": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "TT-416": {
+    "attached_to": "V-404",
+    "method": "signal line"
+   },
+   "LT-417": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "LIC-417": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "LAH-417": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "LSHH-418": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "PT-419": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "PAH-419": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   },
+   "TT-420": {
+    "attached_to": "T-406",
+    "method": "signal line"
+   }
+  },
+  "relief_valves": {},
+  "review_flags": []
+ }
+]

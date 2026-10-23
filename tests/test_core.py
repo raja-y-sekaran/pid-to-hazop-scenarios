@@ -4,11 +4,12 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT))
 
-from pid_hazop.hazop import Graph, draft_hazop  # noqa: E402
-from pid_hazop.reader import EQUIP_RE, LETTERS_RE, LINE_RE, _dist_to_polyline, read_pid  # noqa: E402
-from pid_hazop.score import load_truth, score  # noqa: E402
+from src.data.load_data import load_truth  # noqa: E402
+from src.hazop.engine import Graph, draft_hazop  # noqa: E402
+from src.features.pid_reader import EQUIP_RE, LETTERS_RE, LINE_RE, _dist_to_polyline, read_pid  # noqa: E402
+from src.models.evaluate import score  # noqa: E402
 
 
 @pytest.mark.parametrize("tag,ok", [("V-301", True), ("P-302A", True), ("X-301", False), ("V-30", False)])
@@ -33,8 +34,8 @@ def test_point_to_polyline_distance():
 
 
 def test_reader_matches_ground_truth_on_a_sample_drawing():
-    m = read_pid(ROOT / "data" / "drawings" / "SYN-PID-002.pdf")
-    s = score(m, load_truth("SYN-PID-002", ROOT))
+    m = read_pid(ROOT / "data" / "raw" / "drawings" / "SYN-PID-002.pdf")
+    s = score(m, load_truth("SYN-PID-002"))
     for k, v in s.items():
         if v["true"]:
             assert v["precision"] == 1.0 and v["recall"] == 1.0, k
