@@ -2,7 +2,7 @@
 
 **Read a P&ID issued as a vector PDF (equipment, lines, flow direction, valves, relief valves, instruments) and turn it into a first-draft HAZOP worksheet. Every safeguard is traced to a tag on the drawing, and every missing safeguard is flagged for the team to discuss.**
 
-![CI](https://github.com/rajapune-create/pid-to-hazop-scenarios/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/raja-y-sekaran/pid-to-hazop-scenarios/actions/workflows/ci.yml/badge.svg)
 
 ![What the reader extracted from a synthetic P&ID](reports/figures/annotated_pid.png)
 
